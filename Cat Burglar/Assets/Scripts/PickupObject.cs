@@ -7,65 +7,50 @@ using UnityEngine.UI;
 public class PickupObject : MonoBehaviour {
 
     public Text scoreText;
-
-    private bool canPickup;
-    private int score;
-
+    public int scoreValue;
+    public bool LeftCtrlPressed;
     void Start()
     {
-        score = 0;
-        ScoreText();
+
     }
-	
-	void Update()
+
+    void Update()
     {
-        if (canPickup && Input.GetKeyDown(KeyCode.E)) //Player pressing E to pickup object
+        if(Input.GetKeyDown(KeyCode.LeftControl))
         {
-            ObjectPickup();
-            Score();
-            ScoreText();
+            LeftCtrlPressed = true;
         }
-    
+
     }
 
     void OnTriggerEnter(Collider collider) //When player collides with object
     {
-      if(collider.gameObject.name == "Player")
+        ScoreManager manger = collider.gameObject.GetComponent<ScoreManager>();
+        Debug.Log("Enter Collision");
+
+        if (collider.gameObject.name == "PlayerOne" && LeftCtrlPressed == true)
         {
-            Debug.Log("Entered Collision");
-            canPickup = true;
+            manger.AddScore(scoreValue);
+            Destroy(gameObject);
+        }
+
+        else if (collider.gameObject.name == "PlayerTwo")
+        {
+            manger.AddScore(scoreValue);
+            Destroy(gameObject);
         }
     }
 
-    void OnTriggerExit(Collider collider) //When player exits object collider
+    void OnTriggerExit(Collider collider) //When player two exits object collider
     {
-        if (collider.gameObject.name == "Player")
+        if (collider.gameObject.name == "PlayerOne")
         {
-            Debug.Log("Exited Collision");
-            canPickup = false;
+            Debug.Log("Exit Collision");
+            LeftCtrlPressed = false;
         }
-    }
 
-    void ObjectPickup() //Pickup object
-    {
-        Destroy(this.gameObject);
-    }
-
-    void OnGUI() //Displays tooltip
-    {
-        if(canPickup)
+        else if (collider.gameObject.name == "PlayerTwo")
         {
-            GUI.Box(new Rect(0, 60, 300, 50), "Press E to pickup");
         }
-    }
-
-    void ScoreText() //Displays score text
-    {
-        scoreText.text = "Score: " + score.ToString();
-    }
-   
-    void Score() //Adding score
-    {
-        score = score + 1;
     }
 }
