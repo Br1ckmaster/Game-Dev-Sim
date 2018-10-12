@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PickupObject : MonoBehaviour {
@@ -9,6 +10,8 @@ public class PickupObject : MonoBehaviour {
     public Text scoreText;
     public int scoreValue;
     public bool LeftCtrlPressed;
+    public bool RightCtrlPressed;
+   
     void Start()
     {
 
@@ -16,10 +19,15 @@ public class PickupObject : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             LeftCtrlPressed = true;
         }
+        else if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            RightCtrlPressed = true;
+        }
+        
 
     }
 
@@ -34,7 +42,7 @@ public class PickupObject : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        else if (collider.gameObject.name == "PlayerTwo")
+        else if (collider.gameObject.name == "PlayerTwo" && RightCtrlPressed == true)
         {
             manger.AddScore(scoreValue);
             Destroy(gameObject);
@@ -51,6 +59,8 @@ public class PickupObject : MonoBehaviour {
 
         else if (collider.gameObject.name == "PlayerTwo")
         {
+            Debug.Log("Exit Collision");
+            RightCtrlPressed = false;
         }
     }
 }
