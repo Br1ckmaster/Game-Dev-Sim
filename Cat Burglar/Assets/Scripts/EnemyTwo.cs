@@ -7,6 +7,8 @@ public class EnemyTwo : MonoBehaviour
 
     public Transform playerOne;
     public Transform playerTwo;
+
+    public float enemySpeed;
     void Update()
     {
         Vector3 directionOne = playerOne.position - this.transform.position;
@@ -16,9 +18,9 @@ public class EnemyTwo : MonoBehaviour
         {
             directionTwo.y = 0;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionTwo), 0.1f);
-            if (directionTwo.magnitude > 2)
+            if (directionTwo.magnitude > 1)
             {
-                this.transform.Translate(0, 0, 0.05f);
+                this.transform.Translate(0, 0, enemySpeed);
             }
 
         }
@@ -27,9 +29,9 @@ public class EnemyTwo : MonoBehaviour
         {
             directionOne.y = 0;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionOne), 0.1f);
-            if (directionOne.magnitude > 2)
+            if (directionOne.magnitude > 1)
             {
-                this.transform.Translate(0, 0, 0.05f);
+                this.transform.Translate(0, 0, enemySpeed);
             }
 
         }
