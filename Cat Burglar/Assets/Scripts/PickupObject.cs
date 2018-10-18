@@ -8,6 +8,10 @@ using UnityEngine.SceneManagement;
 public class PickupObject : MonoBehaviour {
 
     public Text scoreText;
+    public PlayerLine playerOneLine;
+    public PlayerLine playerTwoLine;
+    public EnemyOne enemyOne;
+    public EnemyTwo enemyTwo;
     public int scoreValue;
     public bool LeftCtrlPressed;
     public bool RightCtrlPressed;
@@ -39,12 +43,16 @@ public class PickupObject : MonoBehaviour {
         if (collider.gameObject.name == "PlayerOne" && LeftCtrlPressed == true)
         {
             manger.AddScore(scoreValue);
+            playerOneLine.radius += 1.0f;
+            enemyOne.enemyRadius += 1.05;
             Destroy(gameObject);
         }
 
         else if (collider.gameObject.name == "PlayerTwo" && RightCtrlPressed == true)
         {
             manger.AddScore(scoreValue);
+            playerTwoLine.radius += 1.0f;
+            enemyTwo.enemyRadius += 1.05;
             Destroy(gameObject);
         }
     }

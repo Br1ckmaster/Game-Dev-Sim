@@ -15,6 +15,11 @@ public class PlayerLine : MonoBehaviour
         RenderLine();
     }
 
+    void Update()
+    {
+        RenderLine();
+    }
+
     public void RenderLine()
     {
         LineRenderer lineRenderer = gameObject.GetComponent<LineRenderer>();

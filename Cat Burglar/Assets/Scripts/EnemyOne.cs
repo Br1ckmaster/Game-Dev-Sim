@@ -7,14 +7,14 @@ public class EnemyOne: MonoBehaviour
 
     public Transform playerOne;
     public Transform playerTwo;
-
+    public double enemyRadius = 5;
     public float enemySpeed;
     void Update()
     {
         Vector3 directionOne = playerOne.position - this.transform.position;
         Vector3 directionTwo = playerTwo.position - this.transform.position;
         //float angle = Vector3.Angle(direction, this.transform.forward);
-        if (Vector3.Distance(playerOne.position, this.transform.position) < 5 /*&& angle < 30*/)
+        if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadius /*&& angle < 30*/)
         {
             directionOne.y = 0;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionOne), 0.1f);
@@ -24,7 +24,7 @@ public class EnemyOne: MonoBehaviour
             }
 
         }
-        else if (Vector3.Distance(playerTwo.position, this.transform.position) < 5 /*&& angle < 30*/)
+        else if (Vector3.Distance(playerTwo.position, this.transform.position) < enemyRadius /*&& angle < 30*/)
         {
             directionTwo.y = 0;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionTwo), 0.1f);
