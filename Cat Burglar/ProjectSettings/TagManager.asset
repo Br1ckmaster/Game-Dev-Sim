@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Pickup
   - Wall
+  - GroupA
+  - GroupB
+  - GroupC
   layers:
   - Default
   - TransparentFX
