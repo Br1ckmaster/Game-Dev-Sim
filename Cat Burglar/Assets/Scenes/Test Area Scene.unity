@@ -1834,7 +1834,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1232041119080950, guid: 9c60e461689b4d041ba1b9f21b0b1ffb, type: 2}
       propertyPath: m_TagString
-      value: GroupA
+      value: GroupB
       objectReference: {fileID: 0}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}

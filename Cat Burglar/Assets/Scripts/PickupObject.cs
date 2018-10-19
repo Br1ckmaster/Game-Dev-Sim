@@ -56,6 +56,12 @@ public class PickupObject : MonoBehaviour
                 itemsFinal += itemsHeld;
                 text.text = "Score: " + itemsFinal.ToString();
             }
+            else if (gameObject.tag == "GroupB")
+            {
+                itemsHeld += 2;
+                itemsFinal += itemsHeld;
+                text.text = "Score: " + itemsFinal.ToString();
+            }
         }
 
         if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
