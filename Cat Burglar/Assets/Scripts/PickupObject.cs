@@ -5,17 +5,27 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class PickupObject : MonoBehaviour {
+public class PickupObject : MonoBehaviour
+{
 
-    public Text scoreText;
+    //public Text scoreText;
     public PlayerLine playerOneLine;
     public PlayerLine playerTwoLine;
-    public EnemyOne enemyOne;
-    public EnemyTwo enemyTwo;
-    public int scoreValue;
-    public bool LeftCtrlPressed;
-    public bool RightCtrlPressed;
-   
+    public Text text;
+    //public EnemyOne enemyOne;
+    //public EnemyTwo enemyTwo;
+    //public int scoreValue;
+    //public bool LeftCtrlPressed;
+    //public bool RightCtrlPressed;
+    //bool LeftCtrlPressed = false;
+    //bool RightCtrlPressed = false;
+    bool playerOneCollided;
+    bool playerTwoCollided;
+    //public GameObject[] raycastObject;
+    private int  itemsHeld = 0;
+    //int itemsHeldA = 0;
+    private static int itemsFinal = 0;
+
     void Start()
     {
 
@@ -23,37 +33,58 @@ public class PickupObject : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            LeftCtrlPressed = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            RightCtrlPressed = true;
-        }
-        
+        //Vector3 foward = transform.TransformDirection(Vector3.forward);
+        //RaycastHit hit;
+        //if (Physics.Raycast(transform.position, foward, out hit))
+        //{
+        //    if (hit.distance <= 5.0f && hit.collider.gameObject.tag == "Pickup")
+        //    {
+        //        if (Input.GetKeyDown("e"))
+        //        {
+        //            Destroy(raycastObject[1]);
+        //        }
+        //    }
+        //}
 
+        if (playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            PickUp();
+
+            if(gameObject.tag == "GroupA")
+            {
+                itemsHeld += 1;
+                itemsFinal += itemsHeld;
+                text.text = "Score: " + itemsFinal.ToString();
+            }
+        }
+
+        if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
+        {
+            PickUp();
+        }
     }
+
 
     void OnTriggerEnter(Collider collider) //When player collides with object
     {
-        ScoreManager manger = collider.gameObject.GetComponent<ScoreManager>();
-        Debug.Log("Enter Collision");
 
-        if (collider.gameObject.name == "PlayerOne" && LeftCtrlPressed == true)
+        if (collider.gameObject.name == "PlayerOne")
         {
-            manger.AddScore(scoreValue);
-            playerOneLine.radius += 1.0f;
-            enemyOne.enemyRadius += 1.05;
-            Destroy(gameObject);
+            playerOneCollided = true;
+            //manger.AddScore(scoreValue);
+            //playerOneLine.radius += 1.0f;
+            //enemyOne.enemyRadius += 1.05;
+            //enemyTwo.enemyRadius += 1.05;
         }
 
-        else if (collider.gameObject.name == "PlayerTwo" && RightCtrlPressed == true)
+        else if (collider.gameObject.name == "PlayerTwo")
         {
-            manger.AddScore(scoreValue);
-            playerTwoLine.radius += 1.0f;
-            enemyTwo.enemyRadius += 1.05;
-            Destroy(gameObject);
+            playerTwoCollided = true;
+            //manger.AddScore(scoreValue);
+            //playerTwoLine.radius += 1.0f;
+            //enemyOne.enemyRadius += 1.05;
+            //enemyTwo.enemyRadius += 1.05;
+
         }
     }
 
@@ -61,14 +92,19 @@ public class PickupObject : MonoBehaviour {
     {
         if (collider.gameObject.name == "PlayerOne")
         {
-            Debug.Log("Exit Collision");
-            LeftCtrlPressed = false;
+            playerOneCollided = false;
         }
 
         else if (collider.gameObject.name == "PlayerTwo")
         {
-            Debug.Log("Exit Collision");
-            RightCtrlPressed = false;
+            playerTwoCollided = false;
         }
     }
+
+    void PickUp()
+    {
+        Destroy(gameObject);
+    }
+
 }
+
