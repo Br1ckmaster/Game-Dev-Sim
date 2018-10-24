@@ -11,20 +11,18 @@ public class PickupObject : MonoBehaviour
     //public Text scoreText;
     public PlayerLine playerOneLine;
     public PlayerLine playerTwoLine;
-    public Text text;
-    //public EnemyOne enemyOne;
-    //public EnemyTwo enemyTwo;
-    //public int scoreValue;
-    //public bool LeftCtrlPressed;
-    //public bool RightCtrlPressed;
-    //bool LeftCtrlPressed = false;
-    //bool RightCtrlPressed = false;
+
+    public Text playerOneText;
+    public Text playerTwoText;
+
     bool playerOneCollided;
     bool playerTwoCollided;
-    //public GameObject[] raycastObject;
-    private int  itemsHeld = 0;
-    //int itemsHeldA = 0;
-    private static int itemsFinal = 0;
+
+    private int playerOneScore = 0;
+    private int playerTwoScore = 0;
+
+    private static int playerOneFinal = 0;
+    private static int playerTwoFinal = 0;
 
     void Start()
     {
@@ -33,34 +31,51 @@ public class PickupObject : MonoBehaviour
 
     void Update()
     {
-        //Vector3 foward = transform.TransformDirection(Vector3.forward);
-        //RaycastHit hit;
-        //if (Physics.Raycast(transform.position, foward, out hit))
-        //{
-        //    if (hit.distance <= 5.0f && hit.collider.gameObject.tag == "Pickup")
-        //    {
-        //        if (Input.GetKeyDown("e"))
-        //        {
-        //            Destroy(raycastObject[1]);
-        //        }
-        //    }
-        //}
-
         if (playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
         {
             PickUp();
 
             if(gameObject.tag == "GroupA")
             {
-                itemsHeld += 1;
-                itemsFinal += itemsHeld;
-                text.text = "Score: " + itemsFinal.ToString();
+                playerOneScore += 1;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
             }
             else if (gameObject.tag == "GroupB")
             {
-                itemsHeld += 2;
-                itemsFinal += itemsHeld;
-                text.text = "Score: " + itemsFinal.ToString();
+                playerOneScore += 2;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+            }
+            else if (gameObject.tag == "GroupC")
+            {
+                playerOneScore += 3;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+            }
+        }
+
+        else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
+        {
+            PickUp();
+
+            if (gameObject.tag == "GroupA")
+            {
+                playerTwoScore += 1;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+            }
+            else if (gameObject.tag == "GroupB")
+            {
+                playerTwoScore += 2;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+            }
+            else if (gameObject.tag == "GroupC")
+            {
+                playerTwoScore += 3;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
             }
         }
 
@@ -77,20 +92,11 @@ public class PickupObject : MonoBehaviour
         if (collider.gameObject.name == "PlayerOne")
         {
             playerOneCollided = true;
-            //manger.AddScore(scoreValue);
-            //playerOneLine.radius += 1.0f;
-            //enemyOne.enemyRadius += 1.05;
-            //enemyTwo.enemyRadius += 1.05;
         }
 
         else if (collider.gameObject.name == "PlayerTwo")
         {
             playerTwoCollided = true;
-            //manger.AddScore(scoreValue);
-            //playerTwoLine.radius += 1.0f;
-            //enemyOne.enemyRadius += 1.05;
-            //enemyTwo.enemyRadius += 1.05;
-
         }
     }
 
