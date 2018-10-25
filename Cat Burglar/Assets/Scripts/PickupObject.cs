@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PickupObject : MonoBehaviour
 {
-
+   
     //public Text scoreText;
     public PlayerLine playerOneLine;
     public PlayerLine playerTwoLine;
@@ -15,8 +15,12 @@ public class PickupObject : MonoBehaviour
     public Text playerOneText;
     public Text playerTwoText;
 
-    bool playerOneCollided;
-    bool playerTwoCollided;
+    private bool playerOneCollided;
+    private bool playerTwoCollided;
+
+    private static bool p1FirstRadius;
+    private static bool p1SecondRadius;
+    private static bool p1ThirdRadius;
 
     private int playerOneScore = 0;
     private int playerTwoScore = 0;
@@ -33,90 +37,93 @@ public class PickupObject : MonoBehaviour
     {
         if (playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
         {
-            PickUp();
+            Destroy(gameObject);
 
-            if(gameObject.tag == "GroupA")
+            switch (gameObject.tag)
             {
-                playerOneScore += 1;
-                playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
-            }
-            else if (gameObject.tag == "GroupB")
-            {
-                playerOneScore += 2;
-                playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
-            }
-            else if (gameObject.tag == "GroupC")
-            {
-                playerOneScore += 3;
-                playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                case "GroupA":  playerOneScore += 1;
+                                playerOneFinal += playerOneScore;
+                                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                    break;
+
+                case "GroupB":
+                                playerOneScore += 2;
+                                playerOneFinal += playerOneScore;
+                                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                    break;
+
+                case "GroupC":
+                                playerOneScore += 3;
+                                playerOneFinal += playerOneScore;
+                                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                    break;
             }
         }
-
+        
         else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
         {
-            PickUp();
+            Destroy(gameObject);
 
-            if (gameObject.tag == "GroupA")
+            switch (gameObject.tag)
             {
-                playerTwoScore += 1;
-                playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-            }
-            else if (gameObject.tag == "GroupB")
-            {
-                playerTwoScore += 2;
-                playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-            }
-            else if (gameObject.tag == "GroupC")
-            {
-                playerTwoScore += 3;
-                playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-            }
-        }
+                case "GroupA":
+                                playerTwoScore += 1;
+                                playerTwoFinal += playerTwoScore;
+                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                    break;
 
-        if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
-        {
-            PickUp();
+                case "GroupB":
+                                playerTwoScore += 2;
+                                playerTwoFinal += playerTwoScore;
+                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                    break;
+
+                case "GroupC":
+                                playerTwoScore += 3;
+                                playerTwoFinal += playerTwoScore;
+                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                    break;
+            }
         }
     }
 
 
     void OnTriggerEnter(Collider collider) //When player collides with object
     {
-
-        if (collider.gameObject.name == "PlayerOne")
+        switch(collider.gameObject.name)
         {
-            playerOneCollided = true;
-        }
-
-        else if (collider.gameObject.name == "PlayerTwo")
-        {
-            playerTwoCollided = true;
+            case "PlayerOne": playerOneCollided = true; break;
+            case "PlayerTwo": playerTwoCollided = true; break;
         }
     }
 
     void OnTriggerExit(Collider collider) //When player two exits object collider
     {
-        if (collider.gameObject.name == "PlayerOne")
+        switch (collider.gameObject.name)
         {
-            playerOneCollided = false;
-        }
-
-        else if (collider.gameObject.name == "PlayerTwo")
-        {
-            playerTwoCollided = false;
+            case "PlayerOne": playerOneCollided = false; break;
+            case "PlayerTwo": playerTwoCollided = false; break;
         }
     }
 
-    void PickUp()
+    //void PickUp()
+    //{
+    //    Destroy(gameObject);
+    //}
+
+    void OnDestroy()
     {
-        Destroy(gameObject);
+        if (playerOneFinal >= 3 && !p1FirstRadius)
+        {
+            playerOneLine.radius += 1;
+            p1FirstRadius = true;
+        }
+
+        else if (playerOneFinal >= 7 && !p1SecondRadius)
+        {
+            playerOneLine.radius += 2;
+            p1SecondRadius = true;
+        }
     }
-
+    
 }
-
