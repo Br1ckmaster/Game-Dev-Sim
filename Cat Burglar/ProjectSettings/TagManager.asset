@@ -9,6 +9,7 @@ TagManager:
   - GroupA
   - GroupB
   - GroupC
+  - Enemy
   layers:
   - Default
   - TransparentFX
