@@ -128,7 +128,7 @@ public class PickupObject : MonoBehaviour
         {
             playerOneLine.radius += 3;
             enemyOneRangeP1.enemyRadius += 2.9;
-            p1SecondRadiusChanged = true;
+            p1ThirdRadiusChanged = true;
         }
     }
     
