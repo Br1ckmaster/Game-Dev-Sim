@@ -12,26 +12,28 @@ public class PickupObject : MonoBehaviour
     public PlayerLine playerOneLine;
     public PlayerLine playerTwoLine;
 
+    public EnemyOne enemyOneRangeP1;
+    public EnemyOne enemyOneRangeP2;
+
     public Text playerOneText;
     public Text playerTwoText;
 
     private bool playerOneCollided;
     private bool playerTwoCollided;
 
-    private static bool p1FirstRadius;
-    private static bool p1SecondRadius;
-    private static bool p1ThirdRadius;
+    private static bool p1FirstRadiusChanged;
+    private static bool p1SecondRadiusChanged;
+    private static bool p1ThirdRadiusChanged;
+
+    private static bool p2FirstRadiusChanged;
+    private static bool p2SecondRadiusChanged;
+    private static bool p2ThirdRadiusChanged;
 
     private int playerOneScore = 0;
     private int playerTwoScore = 0;
 
     private static int playerOneFinal = 0;
     private static int playerTwoFinal = 0;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -106,23 +108,27 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    //void PickUp()
-    //{
-    //    Destroy(gameObject);
-    //}
-
     void OnDestroy()
     {
-        if (playerOneFinal >= 3 && !p1FirstRadius)
+        if (playerOneFinal >= 3 && !p1FirstRadiusChanged)
         {
             playerOneLine.radius += 1;
-            p1FirstRadius = true;
+            enemyOneRangeP1.enemyRadius += 1;
+            p1FirstRadiusChanged = true;
         }
 
-        else if (playerOneFinal >= 7 && !p1SecondRadius)
+        else if (playerOneFinal >= 7 && !p1SecondRadiusChanged)
         {
             playerOneLine.radius += 2;
-            p1SecondRadius = true;
+            enemyOneRangeP1.enemyRadius += 2.5;
+            p1SecondRadiusChanged = true;
+        }
+
+        else if (playerOneFinal >= 10 && !p1ThirdRadiusChanged)
+        {
+            playerOneLine.radius += 3;
+            enemyOneRangeP1.enemyRadius += 2.9;
+            p1ThirdRadiusChanged = true;
         }
     }
     
