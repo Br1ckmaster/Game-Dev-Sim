@@ -113,23 +113,46 @@ public class PickupObject : MonoBehaviour
         if (playerOneFinal >= 3 && !p1FirstRadiusChanged)
         {
             playerOneLine.radius += 1;
-            enemyOneRangeP1.enemyRadius += 1;
+            enemyOneRangeP1.enemyRadiusP1 += 1;
             p1FirstRadiusChanged = true;
         }
 
         else if (playerOneFinal >= 7 && !p1SecondRadiusChanged)
         {
             playerOneLine.radius += 2;
-            enemyOneRangeP1.enemyRadius += 2.5;
+            enemyOneRangeP2.enemyRadiusP1 += 2.5;
             p1SecondRadiusChanged = true;
         }
 
         else if (playerOneFinal >= 10 && !p1ThirdRadiusChanged)
         {
             playerOneLine.radius += 3;
-            enemyOneRangeP1.enemyRadius += 2.9;
+            enemyOneRangeP1.enemyRadiusP1 += 2.9;
             p1ThirdRadiusChanged = true;
         }
+
+        if (playerTwoFinal >= 3 && !p2FirstRadiusChanged)
+        {
+            playerTwoLine.radius += 1;
+            enemyOneRangeP2.enemyRadiusP2 += 1;
+            p2FirstRadiusChanged = true;
+        }
+
+        else if (playerTwoFinal >= 7 && !p2SecondRadiusChanged)
+        {
+            playerTwoLine.radius += 2;
+            enemyOneRangeP2.enemyRadiusP2 += 2.5;
+            p2SecondRadiusChanged = true;
+        }
+
+        else if (playerTwoFinal >= 10 && !p2ThirdRadiusChanged)
+        {
+            playerTwoLine.radius += 3;
+            enemyOneRangeP2.enemyRadiusP2 += 2.9;
+            p2ThirdRadiusChanged = true;
+        }
+
+
     }
     
 }

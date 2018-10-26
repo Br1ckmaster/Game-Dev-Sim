@@ -23,7 +23,6 @@ public class PlayerLine : MonoBehaviour
     public void RenderLine()
     {
         LineRenderer lineRenderer = gameObject.GetComponent<LineRenderer>();
-        lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
         lineRenderer.positionCount = numSegments + 1;
         lineRenderer.useWorldSpace = false;
 
