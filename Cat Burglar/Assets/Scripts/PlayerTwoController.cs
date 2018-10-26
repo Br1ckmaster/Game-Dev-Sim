@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerTwoController : MonoBehaviour
 {
-    public float movementSpeed;
+    [SerializeField] private float movementSpeed;
+
     CharacterController playerTwo;
-    private void Start()
+    void Start()
     {
         playerTwo = GetComponent<CharacterController>();
     }
