@@ -37,58 +37,28 @@ public class PickupObject : MonoBehaviour
 
     void Update()
     {
-        if (playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
+        if (playerOneCollided && Input.GetButton("P1_Pickup") &&
+        !Input.GetButton("P1_Horizontal") && !Input.GetButton("P1_Vertical"))
         {
-            Destroy(gameObject);
-
-            switch (gameObject.tag)
-            {
-                case "GroupA":  playerOneScore += 1;
-                                playerOneFinal += playerOneScore;
-                                playerOneText.text = "Score: " + playerOneFinal.ToString();
-                    break;
-
-                case "GroupB":
-                                playerOneScore += 2;
-                                playerOneFinal += playerOneScore;
-                                playerOneText.text = "Score: " + playerOneFinal.ToString();
-                    break;
-
-                case "GroupC":
-                                playerOneScore += 3;
-                                playerOneFinal += playerOneScore;
-                                playerOneText.text = "Score: " + playerOneFinal.ToString();
-                    break;
-            }
+            StartCoroutine(PlayerOnePickupDelay());
         }
-        
-        else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
+
+        else if (playerTwoCollided && Input.GetButton("P2_Pickup") &&
+        !Input.GetButton("P2_Horizontal") && !Input.GetButton("P2_Vertical"))
         {
-            Destroy(gameObject);
+            StartCoroutine(PlayerTwoPickupDelay());
+        }
 
-            switch (gameObject.tag)
-            {
-                case "GroupA":
-                                playerTwoScore += 1;
-                                playerTwoFinal += playerTwoScore;
-                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-                    break;
+        else if (playerOneCollided && Input.GetButton("P1_Pickup"))
+        {
+            PlayerOnePickup();
+        }
 
-                case "GroupB":
-                                playerTwoScore += 2;
-                                playerTwoFinal += playerTwoScore;
-                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-                    break;
-
-                case "GroupC":
-                                playerTwoScore += 3;
-                                playerTwoFinal += playerTwoScore;
-                                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-                    break;
-            }
+        else if (playerTwoCollided && Input.GetButton("P2_Pickup"))
+        {
+            PlayerTwoPickup();
         }
     }
-
 
     void OnTriggerEnter(Collider collider) //When player collides with object
     {
@@ -106,6 +76,117 @@ public class PickupObject : MonoBehaviour
             case "PlayerOne": playerOneCollided = false; break;
             case "PlayerTwo": playerTwoCollided = false; break;
         }
+    }
+
+    void PlayerOnePickup()
+    {
+        Destroy(gameObject);
+
+        switch (gameObject.tag)
+        {
+            case "GroupA":
+                playerOneScore += 1;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+
+            case "GroupB":
+                playerOneScore += 2;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+
+            case "GroupC":
+                playerOneScore += 3;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+        }
+
+    }
+
+    void PlayerTwoPickup()
+    {
+        Destroy(gameObject);
+
+        switch (gameObject.tag)
+        {
+            case "GroupA":
+                playerTwoScore += 1;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+
+            case "GroupB":
+                playerTwoScore += 2;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+
+            case "GroupC":
+                playerTwoScore += 3;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+        }
+
+    }
+
+    IEnumerator PlayerOnePickupDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        Destroy(gameObject);
+
+        switch (gameObject.tag)
+        {
+            case "GroupA":
+                playerOneScore += 1;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+
+            case "GroupB":
+                playerOneScore += 2;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+
+            case "GroupC":
+                playerOneScore += 3;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                break;
+        }     
+    }
+
+    IEnumerator PlayerTwoPickupDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        Destroy(gameObject);
+
+        switch (gameObject.tag)
+        {
+            case "GroupA":
+                playerTwoScore += 1;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+
+            case "GroupB":
+                playerTwoScore += 2;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+
+            case "GroupC":
+                playerTwoScore += 3;
+                playerTwoFinal += playerTwoScore;
+                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                break;
+        }
+        
     }
 
     void OnDestroy()
@@ -154,5 +235,5 @@ public class PickupObject : MonoBehaviour
 
 
     }
-    
+
 }
