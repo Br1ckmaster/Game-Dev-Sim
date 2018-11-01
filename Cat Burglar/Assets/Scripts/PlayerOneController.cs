@@ -33,13 +33,14 @@ public class PlayerOneController : MonoBehaviour
 
     void PlayerAnimator()
     {
+
         if(Input.GetButton("P1_Horizontal") || (Input.GetButton("P1_Vertical")))
         {
             animControl.SetBool("IsWalking", true);
             animControl.SetBool("IsIdle", false);
             animControl.SetBool("IsPickup", false);
         }
-        else if(Input.GetKeyDown(KeyCode.LeftControl))
+        else if(Input.GetButton("P1_Pickup"))
         {
             animControl.SetBool("IsWalking", false);
             animControl.SetBool("IsIdle", false);
