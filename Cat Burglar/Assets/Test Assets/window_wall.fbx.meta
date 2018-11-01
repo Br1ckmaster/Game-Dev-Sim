@@ -1,5 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: b15894f2006827c45b9ca6d21f8ee375
+=======
 guid: d26689ad48954fd4a9008405464d34c0
+<<<<<<< HEAD
+=======
+timeCreated: 1541042964
+licenseType: Free
+>>>>>>> 7dd0a86903ceb7b4be7a660d9318c8a481fe2768
+>>>>>>> parent of 277561c... Revert "Merge branch 'master' of https://github.com/Br1ckmaster/Game-Dev-Sim"
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
