@@ -30,7 +30,7 @@ public class NightCycle : MonoBehaviour
 
     void UpdateSun()
     {
-        sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 90, 170, 0); //transform rotation of sun //170 is horizon
+        sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 75, 260, 0); //transform rotation of sun //170 is horizon
 
         float intensityMultiplier = 1; //changes light intensity of sun
 
