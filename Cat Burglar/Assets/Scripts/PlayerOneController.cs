@@ -7,12 +7,15 @@ public class PlayerOneController : MonoBehaviour
     [SerializeField]private float movementSpeed;
 
     CharacterController playerOne;
+    Animator animControl;
     private void Start()
     {
         playerOne = GetComponent<CharacterController>();
+        animControl = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
     void Update() //Player Movement
     {
+        PlayerAnimator();
 
         Vector2 input = new Vector2(Input.GetAxisRaw("P1_Horizontal"), Input.GetAxisRaw("P1_Vertical"));
         Vector2 inputDir = input.normalized;
@@ -26,6 +29,29 @@ public class PlayerOneController : MonoBehaviour
 
         Vector3 velocity = transform.forward * speed;
         playerOne.Move(velocity * Time.deltaTime);
+    }
+
+    void PlayerAnimator()
+    {
+        if(Input.GetButton("P1_Horizontal") || (Input.GetButton("P1_Vertical")))
+        {
+            animControl.SetBool("IsWalking", true);
+            animControl.SetBool("IsIdle", false);
+            animControl.SetBool("IsPickup", false);
+        }
+        else if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            animControl.SetBool("IsWalking", false);
+            animControl.SetBool("IsIdle", false);
+            animControl.SetBool("IsPickup", true);
+        }
+
+        else
+        {
+            animControl.SetBool("IsWalking", false);
+            animControl.SetBool("IsIdle", true);
+            animControl.SetBool("IsPickup", false);
+        }
     }
 
 }
