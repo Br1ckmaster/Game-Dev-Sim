@@ -10,7 +10,6 @@ TagManager:
   - GroupB
   - GroupC
   - Enemy
-  - PlayerTwo
   layers:
   - Default
   - TransparentFX
