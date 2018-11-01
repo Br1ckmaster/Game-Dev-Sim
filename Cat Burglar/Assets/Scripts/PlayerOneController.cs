@@ -16,7 +16,6 @@ public class PlayerOneController : MonoBehaviour
     void Update() //Player Movement
     {
         PlayerAnimator();
-
         Vector2 input = new Vector2(Input.GetAxisRaw("P1_Horizontal"), Input.GetAxisRaw("P1_Vertical"));
         Vector2 inputDir = input.normalized;
 
