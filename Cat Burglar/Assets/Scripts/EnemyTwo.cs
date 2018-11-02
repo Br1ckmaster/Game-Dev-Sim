@@ -18,6 +18,7 @@ public class EnemyTwo : MonoBehaviour
 	}
     void Update()
     {
+
         Vector3 directionOne = playerOne.position - this.transform.position;
         Vector3 directionTwo = playerTwo.position - this.transform.position;
         //float angle = Vector3.Angle(direction, this.transform.forward);

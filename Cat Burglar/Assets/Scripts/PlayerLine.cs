@@ -8,7 +8,7 @@ public class PlayerLine : MonoBehaviour
     public float radius = 1.0f;
 
     [Range(3, 256)]
-    public int numSegments = 128;
+    public int numSegments = 256;
 
     void Start()
     {
