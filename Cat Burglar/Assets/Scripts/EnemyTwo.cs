@@ -21,12 +21,12 @@ public class EnemyTwo : MonoBehaviour
         Vector3 directionOne = playerOne.position - this.transform.position;
         Vector3 directionTwo = playerTwo.position - this.transform.position;
         //float angle = Vector3.Angle(direction, this.transform.forward);
-		if (Vector3.Distance (playerOne.position, this.transform.position) < enemyRadiusP1 /*&& angle < 30*/) 
+		if (Vector3.Distance (playerTwo.position, this.transform.position) < enemyRadiusP2 /*&& angle < 30*/) 
 		{
 			directionOne.y = 0;
-			this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (directionOne), 0.1f);
+			this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (directionTwo), 0.1f);
 			anim.SetBool ("IsIdle", false);
-			if (directionOne.magnitude > 1) 
+			if (directionTwo.magnitude > 1) 
 			{
 				this.transform.Translate (0, 0, enemySpeed);
 				anim.SetBool ("IsWalking", true);
@@ -41,12 +41,12 @@ public class EnemyTwo : MonoBehaviour
 		} 
 
 
-		else if (Vector3.Distance(playerTwo.position, this.transform.position) < enemyRadiusP2 /*&& angle < 30*/)
+		else if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1 /*&& angle < 30*/)
 		{
 			directionTwo.y = 0;
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionTwo), 0.1f);
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionOne), 0.1f);
 			anim.SetBool("IsIdle", false);
-			if (directionTwo.magnitude > 1)
+			if (directionOne.magnitude > 1)
 			{
 				this.transform.Translate(0, 0, enemySpeed);
 				anim.SetBool("IsWalking", true);
