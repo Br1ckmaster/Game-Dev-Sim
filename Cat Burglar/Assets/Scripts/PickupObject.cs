@@ -15,6 +15,9 @@ public class PickupObject : MonoBehaviour
     public EnemyOne enemyOneRangeP1;
     public EnemyOne enemyOneRangeP2;
 
+    public EnemyTwo enemyTwoRangeP1;
+    public EnemyTwo enemyTwoRangeP2;
+
     public Text playerOneText;
     public Text playerTwoText;
 
@@ -195,13 +198,15 @@ public class PickupObject : MonoBehaviour
         {
             playerOneLine.radius += 1;
             enemyOneRangeP1.enemyRadiusP1 += 1;
+            enemyTwoRangeP1.enemyRadiusP1 += 1;
             p1FirstRadiusChanged = true;
         }
 
         else if (playerOneFinal >= 7 && !p1SecondRadiusChanged)
         {
             playerOneLine.radius += 2;
-            enemyOneRangeP2.enemyRadiusP1 += 2.5;
+            enemyOneRangeP1.enemyRadiusP1 += 2.5;
+            enemyTwoRangeP1.enemyRadiusP1 += 2.5;
             p1SecondRadiusChanged = true;
         }
 
@@ -209,6 +214,7 @@ public class PickupObject : MonoBehaviour
         {
             playerOneLine.radius += 3;
             enemyOneRangeP1.enemyRadiusP1 += 2.9;
+            enemyTwoRangeP1.enemyRadiusP1 += 2.9;
             p1ThirdRadiusChanged = true;
         }
 
@@ -216,6 +222,7 @@ public class PickupObject : MonoBehaviour
         {
             playerTwoLine.radius += 1;
             enemyOneRangeP2.enemyRadiusP2 += 1;
+            enemyTwoRangeP2.enemyRadiusP2 += 1;
             p2FirstRadiusChanged = true;
         }
 
@@ -223,6 +230,7 @@ public class PickupObject : MonoBehaviour
         {
             playerTwoLine.radius += 2;
             enemyOneRangeP2.enemyRadiusP2 += 2.5;
+            enemyTwoRangeP2.enemyRadiusP2 += 2.5;
             p2SecondRadiusChanged = true;
         }
 
@@ -230,6 +238,7 @@ public class PickupObject : MonoBehaviour
         {
             playerTwoLine.radius += 3;
             enemyOneRangeP2.enemyRadiusP2 += 2.9;
+            enemyTwoRangeP2.enemyRadiusP2 += 2.9;
             p2ThirdRadiusChanged = true;
         }
 
