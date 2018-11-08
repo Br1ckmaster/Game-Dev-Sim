@@ -11,6 +11,7 @@ TagManager:
   - GroupC
   - Enemy
   - PlayerTwo
+  - AudioTriggerChase
   layers:
   - Default
   - TransparentFX
