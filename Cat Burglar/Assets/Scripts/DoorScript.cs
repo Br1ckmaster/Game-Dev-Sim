@@ -43,21 +43,16 @@ public class DoorScript : MonoBehaviour {
                 }
             }
         }
-
-        if (inTrigger)
+        if (open)
         {
-            if (open)
-            {
-                var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 90f, 0.0f), Time.deltaTime * 200);
-                transform.rotation = newRot;
-            }
-            else
-            {
-                var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 0f, 0.0f), Time.deltaTime * 200);
-                transform.rotation = newRot;
-            }
+            var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 90f, 0.0f), Time.deltaTime * 200);
+            transform.rotation = newRot;
         }
-
+        else
+        {
+            var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 0f, 0.0f), Time.deltaTime * 200);
+            transform.rotation = newRot;
+        }
     }
 
     void OnGUI()
