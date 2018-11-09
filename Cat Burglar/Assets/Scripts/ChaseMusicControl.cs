@@ -9,7 +9,7 @@ public class ChaseMusicControl : MonoBehaviour {
     public AudioMixerSnapshot Chase;
     //public AudioClip[] stings;
     //public AudioSource stingSource;
-    public float bpm = 128;
+    public float bpm = 120;
 
     private float m_TransitionIn;
     private float m_TransitionOut;
