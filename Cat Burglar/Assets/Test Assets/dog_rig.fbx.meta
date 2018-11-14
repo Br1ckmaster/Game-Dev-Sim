@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: bc49b296608788a4685631d04e554e94
+timeCreated: 1542164031
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: dog
+    100002: //RootNode
+    100004: elbow_l_ctrl
+    100006: elbow_l_jnt
+    100008: elbow_l_loc
+    100010: elbow_r_ctrl
+    100012: elbow_r_jnt
+    100014: elbow_r_loc
+    100016: foot_l_jnt
+    100018: foot_r_jnt
+    100020: hand_l_jnt
+    100022: hand_r_jnt
+    100024: head_jnt
+    100026: hip_cog_ctrl
+    100028: hip_cog_jnt
+    100030: hip_cog_loc
+    100032: hip_l_jnt
+    100034: hip_r_jnt
+    100036: knee_l_ctrl
+    100038: knee_l_jnt
+    100040: knee_l_loc
+    100042: knee_r_ctrl
+    100044: knee_r_jnt
+    100046: knee_r_loc
+    100048: neck_ctrl
+    100050: neck_jnt
+    100052: neck_loc
+    100054: root_ctrl
+    100056: root_jnt
+    100058: root_loc
+    100060: shoulder_l_jnt
+    100062: shoulder_r_jnt
+    100064: spine_1_ctrl
+    100066: spine_1_jnt
+    100068: spine_1_loc
+    100070: spine_2_jnt
+    100072: tail_1_ctrl
+    100074: tail_1_jnt
+    100076: tail_1_loc
+    100078: tail_2_ctrl
+    100080: tail_2_jnt
+    100082: tail_2_loc
+    100084: tail_3_jnt
+    400000: dog
+    400002: //RootNode
+    400004: elbow_l_ctrl
+    400006: elbow_l_jnt
+    400008: elbow_l_loc
+    400010: elbow_r_ctrl
+    400012: elbow_r_jnt
+    400014: elbow_r_loc
+    400016: foot_l_jnt
+    400018: foot_r_jnt
+    400020: hand_l_jnt
+    400022: hand_r_jnt
+    400024: head_jnt
+    400026: hip_cog_ctrl
+    400028: hip_cog_jnt
+    400030: hip_cog_loc
+    400032: hip_l_jnt
+    400034: hip_r_jnt
+    400036: knee_l_ctrl
+    400038: knee_l_jnt
+    400040: knee_l_loc
+    400042: knee_r_ctrl
+    400044: knee_r_jnt
+    400046: knee_r_loc
+    400048: neck_ctrl
+    400050: neck_jnt
+    400052: neck_loc
+    400054: root_ctrl
+    400056: root_jnt
+    400058: root_loc
+    400060: shoulder_l_jnt
+    400062: shoulder_r_jnt
+    400064: spine_1_ctrl
+    400066: spine_1_jnt
+    400068: spine_1_loc
+    400070: spine_2_jnt
+    400072: tail_1_ctrl
+    400074: tail_1_jnt
+    400076: tail_1_loc
+    400078: tail_2_ctrl
+    400080: tail_2_jnt
+    400082: tail_2_loc
+    400084: tail_3_jnt
+    2100000: dog_ears
+    2100002: lambert2
+    4300000: dog
+    9500000: //RootNode
+    13700000: dog
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

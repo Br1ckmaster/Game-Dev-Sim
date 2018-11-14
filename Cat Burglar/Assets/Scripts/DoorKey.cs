@@ -20,7 +20,7 @@ public class DoorKey : MonoBehaviour {
     {
         if (inTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.LeftControl))
             {
                 DoorScript.doorKey = true;
                 Destroy(this.gameObject);
@@ -32,7 +32,7 @@ public class DoorKey : MonoBehaviour {
     {
         if (inTrigger)
         {
-            GUI.Box(new Rect(0, 60, 200, 25), "Press E to take key");
+            GUI.Box(new Rect(0, 60, 200, 25), "Press Left Control to steal");
         }
     }
 }
