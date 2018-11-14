@@ -9,38 +9,60 @@ public class EnemyOne: MonoBehaviour
     //public Transform playerTwo;
     public double enemyRadiusP1 = 2;
     public double enemyRadiusP2 = 2;
-    public float enemySpeed;
+    public double enemyTrailDistance = 3;
+    //public float enemySpeed;
+
 	static Animator anim;
+
+    [HideInInspector]
+    public Vector3 originalPos;
+
+    private NavMeshAgent nav;
 
     private Chase chase;
     private Path path;
+
+    void Awake()
+    {
+        nav = GetComponent<NavMeshAgent>();
+        originalPos = gameObject.transform.position;
+    }
 
     void Start ()
 	{
 		anim = GetComponent<Animator>();
         chase = GetComponent<Chase>();
         path = GetComponent<Path>();
+
+        anim.SetBool("IsIdle", true);
+        anim.SetBool("IsWalking", false);
+        anim.SetBool("IsAttacking", false);
+
         chase.enabled = false;
-        path.enabled = true;
+        path.enabled = false;
     }
     void Update()
     {
-        //float angle = Vector3.Angle(direction, this.transform.forward);
-        if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1 /*&& angle < 30*/)
+        if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1)
         {
-            anim.SetBool("IsIdle", false);
+            anim.SetBool("IsWalking", true);
+            anim.SetBool("IsAttacking", false);
 
             chase.enabled = true;
             path.enabled = false;
             chase.PlayerChase();
         }
 
-        //else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1 /*&& angle < 30*/)
-        //{
-        //    path.enabled = true;
-        //    chase.enabled = false;
-        //    path.Patrolling();
-        //}
+        else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1 + 4)
+        {
+            anim.SetBool("IsIdle", false);
+            anim.SetBool("IsWalking", true);
+            anim.SetBool("IsAttacking", false);
+
+            path.enabled = true;
+            chase.enabled = false;
+            path.PathBack();
+        }
 
         //else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1)
         //{
@@ -66,13 +88,13 @@ public class EnemyOne: MonoBehaviour
         //    }
         //}
 
-        else
-        {
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsWalking", false);
-            anim.SetBool("IsAttacking", false);
-            chase.enabled = false;
-        }
+        //else
+        //{
+        //    anim.SetBool("IsIdle", true);
+        //    anim.SetBool("IsWalking", false);
+        //    anim.SetBool("IsAttacking", false);
+        //    chase.enabled = false;
+        //}
     }
 
 
