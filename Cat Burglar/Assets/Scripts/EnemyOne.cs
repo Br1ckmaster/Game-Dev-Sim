@@ -43,17 +43,30 @@ public class EnemyOne: MonoBehaviour
     }
     void Update()
     {
-        if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1)
+        if (playerOne != null)
         {
-            anim.SetBool("IsWalking", true);
-            anim.SetBool("IsAttacking", false);
+            if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1)
+            {
+                anim.SetBool("IsWalking", true);
+                anim.SetBool("IsAttacking", false);
 
-            chase.enabled = true;
-            path.enabled = false;
-            chase.PlayerChase();
+                chase.enabled = true;
+                path.enabled = false;
+                chase.PlayerChase();
+            }
+
+            else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1/* + 4*/)
+            {
+                anim.SetBool("IsIdle", false);
+                anim.SetBool("IsWalking", true);
+                anim.SetBool("IsAttacking", false);
+
+                path.enabled = true;
+                chase.enabled = false;
+                path.PathBack();
+            }
         }
-
-        else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1 + 4)
+        else
         {
             anim.SetBool("IsIdle", false);
             anim.SetBool("IsWalking", true);
