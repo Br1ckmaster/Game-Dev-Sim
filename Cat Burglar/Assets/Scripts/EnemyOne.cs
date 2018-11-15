@@ -12,7 +12,7 @@ public class EnemyOne: MonoBehaviour
     public double enemyTrailDistance = 3;
     //public float enemySpeed;
 
-	static Animator anim;
+	public Animator anim;
 
     [HideInInspector]
     public Vector3 originalPos;
@@ -42,7 +42,7 @@ public class EnemyOne: MonoBehaviour
     {
         if (playerOne != null)
         {
-            if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1)
+            if (Vector3.Distance(playerOne.position, gameObject.transform.position) < enemyRadiusP1)
             {
                 anim.SetBool("IsWalking", true);
                 anim.SetBool("IsAttacking", false);
@@ -52,7 +52,7 @@ public class EnemyOne: MonoBehaviour
                 chase.PlayerChase();
             }
 
-            else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1/* + 4*/)
+            else if (Vector3.Distance(playerOne.position, gameObject.transform.position) > enemyRadiusP1 + enemyTrailDistance)
             {
                 anim.SetBool("IsIdle", false);
                 anim.SetBool("IsWalking", true);
