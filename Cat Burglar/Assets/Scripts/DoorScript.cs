@@ -25,7 +25,7 @@ public class DoorScript : MonoBehaviour {
         {
             if (close)
             {
-                if (doorKey)
+               // if (doorKey)
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
