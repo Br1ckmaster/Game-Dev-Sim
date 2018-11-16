@@ -98,21 +98,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.1
+    agentHeight: 1.5
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.033333335
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: e2632b1fa3264024080515cf7f054815, type: 2}
 --- !u!1001 &7906938
 Prefab:
   m_ObjectHideFlags: 0
@@ -4856,19 +4856,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1973179638423500, guid: cbf9ecce1a674674d99ae68e2a45adb1,
     type: 2}
   m_PrefabInternal: {fileID: 1650277874}
---- !u!136 &1650277876
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650277875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.35
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.675, z: 0}
 --- !u!54 &1650277877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4884,20 +4871,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1650277880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650277875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4179be958c8ebd4caf200df548c50df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  bpm: 120
 --- !u!114 &1679738725 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114312103063868914, guid: 3faf5bc08d71608498e0bacf82210883,
@@ -5761,20 +5734,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1796388299833706, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
     type: 2}
   m_PrefabInternal: {fileID: 2056040339}
---- !u!114 &2056040341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2056040340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4179be958c8ebd4caf200df548c50df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  bpm: 120
 --- !u!54 &2056040342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5790,16 +5749,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2056040345
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2056040340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.35
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.675, z: 0}
