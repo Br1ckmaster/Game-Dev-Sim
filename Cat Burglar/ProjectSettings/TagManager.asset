@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - PlayerTwo
   - AudioTriggerChase
+  - Exit
   layers:
   - Default
   - TransparentFX

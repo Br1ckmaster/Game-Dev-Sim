@@ -12,19 +12,16 @@ public class EnemyOne: MonoBehaviour
     public double enemyTrailDistance = 3;
     //public float enemySpeed;
 
-	static Animator anim;
+	public Animator anim;
 
     [HideInInspector]
     public Vector3 originalPos;
-
-    private NavMeshAgent nav;
 
     private Chase chase;
     private Path path;
 
     void Awake()
     {
-        nav = GetComponent<NavMeshAgent>();
         originalPos = gameObject.transform.position;
     }
 
@@ -45,7 +42,7 @@ public class EnemyOne: MonoBehaviour
     {
         if (playerOne != null)
         {
-            if (Vector3.Distance(playerOne.position, this.transform.position) < enemyRadiusP1)
+            if (Vector3.Distance(playerOne.position, gameObject.transform.position) < enemyRadiusP1)
             {
                 anim.SetBool("IsWalking", true);
                 anim.SetBool("IsAttacking", false);
@@ -55,7 +52,7 @@ public class EnemyOne: MonoBehaviour
                 chase.PlayerChase();
             }
 
-            else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1/* + 4*/)
+            else if (Vector3.Distance(playerOne.position, gameObject.transform.position) > enemyRadiusP1 + enemyTrailDistance)
             {
                 anim.SetBool("IsIdle", false);
                 anim.SetBool("IsWalking", true);
@@ -76,38 +73,6 @@ public class EnemyOne: MonoBehaviour
             chase.enabled = false;
             path.PathBack();
         }
-
-        //else if (Vector3.Distance(playerOne.position, this.transform.position) > enemyRadiusP1)
-        //{
-        //    Patrolling();
-        //}
-        //else if (Vector3.Distance(playerTwo.position, this.transform.position) < enemyRadiusP2 /*&& angle < 30*/)
-        //{
-        //    Vector3 directionTwo = playerTwo.position - this.transform.position;
-
-        //    directionTwo.y = 0;
-        //    this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionTwo), 0.1f);
-        //    anim.SetBool("IsIdle", false);
-        //    if (directionTwo.magnitude > 1)
-        //    {
-        //        this.transform.Translate(0, 0, enemySpeed);
-        //        anim.SetBool("IsWalking", true);
-        //        anim.SetBool("IsAttacking", false);
-        //    }
-        //    else
-        //    {
-        //        anim.SetBool("IsAttacking", true);
-        //        anim.SetBool("IsWalking", false);
-        //    }
-        //}
-
-        //else
-        //{
-        //    anim.SetBool("IsIdle", true);
-        //    anim.SetBool("IsWalking", false);
-        //    anim.SetBool("IsAttacking", false);
-        //    chase.enabled = false;
-        //}
     }
 
 
