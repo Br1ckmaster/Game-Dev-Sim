@@ -12,6 +12,7 @@ public class PlayerOneController : MonoBehaviour
     {
         playerOne = GetComponent<CharacterController>();
         animControl = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        playerOne.detectCollisions = false;
     }
     void Update() //Player Movement
     {

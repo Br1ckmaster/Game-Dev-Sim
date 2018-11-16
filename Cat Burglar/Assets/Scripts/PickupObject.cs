@@ -24,16 +24,17 @@ public class PickupObject : MonoBehaviour
     private bool playerOneCollided;
     private bool playerTwoCollided;
 
-    private bool p1FirstRadiusChanged;
-    private bool p1SecondRadiusChanged;
-    private bool p1ThirdRadiusChanged;
+    private static bool  p1FirstRadiusChanged;
+    private static bool  p1SecondRadiusChanged;
+    private static bool  p1ThirdRadiusChanged;
+                  
+    private static bool  p2FirstRadiusChanged;
+    private static bool  p2SecondRadiusChanged;
+    private static bool  p2ThirdRadiusChanged;
 
-    private bool p2FirstRadiusChanged;
-    private bool p2SecondRadiusChanged;
-    private bool p2ThirdRadiusChanged;
 
-    private int playerOneScore = 0;
-    private int playerTwoScore = 0;
+    private static int playerOneScore = 0;
+    private static int playerTwoScore = 0;
 
     private int playerOneFinal = 0;
     private int playerTwoFinal = 0;
