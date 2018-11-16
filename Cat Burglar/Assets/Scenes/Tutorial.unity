@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -502,7 +502,7 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -512,7 +512,7 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: playerOneText
@@ -594,7 +594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &245648756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +800,10 @@ Prefab:
       propertyPath: m_CarveOnlyStationary
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1274989702497490, guid: b36d5fa74af3d3c47ba83fd3ac8a1999, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b36d5fa74af3d3c47ba83fd3ac8a1999, type: 2}
   m_IsPrefabParent: 0
@@ -936,12 +940,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneText
@@ -1322,12 +1326,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &547177946 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114314302600748730, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-    type: 2}
-  m_PrefabInternal: {fileID: 547177945}
-  m_Script: {fileID: 11500000, guid: 32834d9cd40d9844f9f7284b6c8cef8a, type: 3}
 --- !u!4 &578876074 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4431816198893790, guid: 03d392436c27e7447bd27067cae7989c,
@@ -2411,7 +2409,16 @@ Prefab:
       propertyPath: enemyTrailDistance
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 136860428988044470, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114486185916687602, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114197025994440634, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114128342473296586, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114948171426585542, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1171540556 stripped
@@ -2430,10 +2437,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!114 &1171540558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2456,6 +2463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de96d554837d2940b18b46b7762715f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  player: {fileID: 998466341}
 --- !u!1 &1174362128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,7 +2680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1239299267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2815,6 +2824,11 @@ Prefab:
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.228001
+      objectReference: {fileID: 0}
+    - target: {fileID: 136924134942699212, guid: 3faf5bc08d71608498e0bacf82210883,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
@@ -4471,12 +4485,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 547177946}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneText

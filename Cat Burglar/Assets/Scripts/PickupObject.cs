@@ -91,19 +91,19 @@ public class PickupObject : MonoBehaviour
             case "GroupA":
                 playerOneScore += 1;
                 playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                playerOneText.text = " " + playerOneFinal.ToString();
                 break;
 
             case "GroupB":
                 playerOneScore += 2;
                 playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                playerOneText.text = " " + playerOneFinal.ToString();
                 break;
 
             case "GroupC":
                 playerOneScore += 3;
                 playerOneFinal += playerOneScore;
-                playerOneText.text = "Score: " + playerOneFinal.ToString();
+                playerOneText.text = " " + playerOneFinal.ToString();
                 break;
         }
 
@@ -118,19 +118,19 @@ public class PickupObject : MonoBehaviour
             case "GroupA":
                 playerTwoScore += 1;
                 playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                playerTwoText.text = " " + playerTwoFinal.ToString();
                 break;
 
             case "GroupB":
                 playerTwoScore += 2;
                 playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                playerTwoText.text = " " + playerTwoFinal.ToString();
                 break;
 
             case "GroupC":
                 playerTwoScore += 3;
                 playerTwoFinal += playerTwoScore;
-                playerTwoText.text = "Score: " + playerTwoFinal.ToString();
+                playerTwoText.text = " " + playerTwoFinal.ToString();
                 break;
         }
 

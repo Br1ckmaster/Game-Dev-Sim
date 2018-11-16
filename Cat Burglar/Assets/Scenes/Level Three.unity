@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -168,6 +168,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -192,6 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de96d554837d2940b18b46b7762715f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  player: {fileID: 427574891}
 --- !u!114 &10988017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,6 +415,12 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &50770793 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114978971768948448, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 241647977}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &72969613
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +556,7 @@ NavMeshObstacle:
   m_Extents: {x: 1, y: 0.25, z: 0.625}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: -1.9, y: 0.3, z: 1.525}
   m_TimeToStationary: 0.5
 --- !u!65 &76617587
@@ -607,6 +625,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -753,6 +781,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -807,6 +845,16 @@ Prefab:
     - target: {fileID: 1538855046623894, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_Name
       value: Window (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -1128,6 +1176,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -1191,6 +1249,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -1246,6 +1314,16 @@ Prefab:
       propertyPath: m_Name
       value: Window (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -1254,6 +1332,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4515822181295590, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
     type: 2}
   m_PrefabInternal: {fileID: 221014364}
+--- !u!114 &240080889 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114593375042661308, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 241647977}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &241647977
 Prefab:
   m_ObjectHideFlags: 0
@@ -1951,6 +2035,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -1959,6 +2053,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4515822181295590, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
     type: 2}
   m_PrefabInternal: {fileID: 418067963}
+--- !u!1 &427574891 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1238168564835780, guid: 3faf5bc08d71608498e0bacf82210883,
+    type: 2}
+  m_PrefabInternal: {fileID: 1470430448}
 --- !u!1 &430970880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2207,11 @@ Prefab:
       propertyPath: m_Speed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114486185916687602, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114197025994440634, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114128342473296586, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
+    - {fileID: 114948171426585542, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &463067793
@@ -2276,6 +2379,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -2421,6 +2534,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 2.55
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -2476,6 +2599,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -2530,6 +2663,16 @@ Prefab:
     - target: {fileID: 1062795726641502, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
       propertyPath: m_Name
       value: WallDouble100 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
@@ -3076,6 +3219,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -3133,6 +3286,16 @@ Prefab:
       propertyPath: playerTwo
       value: 
       objectReference: {fileID: 923574722}
+    - target: {fileID: 114050879766832664, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 319785344}
+    - target: {fileID: 114589168444778248, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 427574891}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
@@ -3182,6 +3345,16 @@ Prefab:
     - target: {fileID: 1062795726641502, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
       propertyPath: m_Name
       value: WallDouble100 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
@@ -3292,22 +3465,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: m_Size.x
@@ -3377,6 +3550,16 @@ Prefab:
     - target: {fileID: 1538855046623894, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_Name
       value: Window (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -3571,6 +3754,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -3743,22 +3936,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -3936,7 +4129,7 @@ NavMeshObstacle:
   m_Extents: {x: 1, y: 0.25, z: 0.625}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: -1.9, y: 0.3, z: 1.525}
   m_TimeToStationary: 0.5
 --- !u!65 &871688972
@@ -4009,6 +4202,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -4257,6 +4460,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -4334,12 +4547,12 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 1616108974776798, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
       propertyPath: m_Name
       value: Sphere B (2)
@@ -4348,12 +4561,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: m_Size.x
@@ -4442,6 +4655,16 @@ Prefab:
     - target: {fileID: 4515822181295590, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -4595,6 +4818,16 @@ Prefab:
     - target: {fileID: 1538855046623894, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_Name
       value: Window (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -5084,12 +5317,12 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 1616108974776798, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
       propertyPath: m_Name
       value: Sphere B (1)
@@ -5098,12 +5331,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: m_Size.x
@@ -5247,6 +5480,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -5309,6 +5552,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -5381,12 +5634,12 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 1452836150989282, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
       propertyPath: m_Name
       value: Sphere C (1)
@@ -5395,12 +5648,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65390403465246556, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: m_Size.x
@@ -5891,6 +6144,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -6107,6 +6370,16 @@ Prefab:
       propertyPath: m_Name
       value: Window (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -6169,6 +6442,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -6386,6 +6669,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 3.1
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -6440,6 +6733,16 @@ Prefab:
     - target: {fileID: 1538855046623894, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_Name
       value: Window (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -6611,6 +6914,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -6673,6 +6986,16 @@ Prefab:
     - target: {fileID: 4515822181295590, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
@@ -6898,6 +7221,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 2.8
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -6957,6 +7290,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -7011,6 +7354,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -7129,6 +7482,16 @@ Prefab:
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
@@ -7305,22 +7668,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: m_Size.x
@@ -7398,6 +7761,16 @@ Prefab:
     - target: {fileID: 4431816198893790, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
@@ -7554,6 +7927,16 @@ Prefab:
       propertyPath: m_Name
       value: Window (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -7644,22 +8027,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -7731,22 +8114,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65390403465246556, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: m_Size.x
@@ -8090,7 +8473,7 @@ NavMeshObstacle:
   m_Extents: {x: 1, y: 0.25, z: 0.625}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: -1.9, y: 0.3, z: 1.525}
   m_TimeToStationary: 0.5
 --- !u!65 &1803174196
@@ -8209,12 +8592,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &1826758050 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114314302600748730, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-    type: 2}
-  m_PrefabInternal: {fileID: 701122039}
-  m_Script: {fileID: 11500000, guid: 32834d9cd40d9844f9f7284b6c8cef8a, type: 3}
 --- !u!1001 &1839298928
 Prefab:
   m_ObjectHideFlags: 0
@@ -8270,6 +8647,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -8324,6 +8711,16 @@ Prefab:
     - target: {fileID: 1062795726641502, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
       propertyPath: m_Name
       value: WallDouble100 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
@@ -8411,7 +8808,7 @@ NavMeshObstacle:
   m_Extents: {x: 1, y: 0.25, z: 0.625}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: -1.9, y: 0.3, z: 1.525}
   m_TimeToStationary: 0.5
 --- !u!1 &1929742960
@@ -8561,6 +8958,16 @@ Prefab:
       propertyPath: m_Name
       value: Window (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208627144451080970, guid: fcfe9d1d70d0d2541a83dbf06e85f30d,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfe9d1d70d0d2541a83dbf06e85f30d, type: 2}
   m_IsPrefabParent: 0
@@ -8685,6 +9092,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 3.25
       objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208994917846037694, guid: 689eca1737d2f754d89f011b4290c011,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
   m_IsPrefabParent: 0
@@ -8756,12 +9173,12 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: m_Size.x
@@ -8781,12 +9198,12 @@ Prefab:
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
   m_IsPrefabParent: 0
@@ -9223,6 +9640,16 @@ Prefab:
       propertyPath: m_Name
       value: WallDouble100 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208635994775195206, guid: 03d392436c27e7447bd27067cae7989c,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03d392436c27e7447bd27067cae7989c, type: 2}
   m_IsPrefabParent: 0
@@ -9398,22 +9825,22 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 240080889}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 50770793}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP2
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyTwoRangeP1
       value: 
-      objectReference: {fileID: 1826758050}
+      objectReference: {fileID: 0}
     - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: m_Size.x
