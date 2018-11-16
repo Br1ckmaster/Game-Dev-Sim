@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class Chase : MonoBehaviour
 {  
-    static Animator anim;
+    public Animator anim;
 
     private NavMeshAgent nav;
     private EnemyOne enemy;
+    public GameObject player;
 
     void Awake()
     {
@@ -23,7 +24,6 @@ public class Chase : MonoBehaviour
 
     public void PlayerChase()
     {
-        //Vector3 directionOne = enemy.playerOne.position - this.transform.position;
         //directionOne.y = 0;
         //this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionOne), 0.15f);
         //anim.SetBool("IsIdle", false);
@@ -44,9 +44,16 @@ public class Chase : MonoBehaviour
         }
 
             nav.SetDestination(enemy.playerOne.position);
-
-            anim.SetBool("IsAttacking", true);
-            anim.SetBool("IsWalking", false);
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //anim.SetBool("IsWalking", false);
+        //anim.SetBool("IsAttacking", true);
+        switch (collision.gameObject.name)
+        {
+            case "PlayerOne": Destroy(player); break;
+        }
     }
 }
