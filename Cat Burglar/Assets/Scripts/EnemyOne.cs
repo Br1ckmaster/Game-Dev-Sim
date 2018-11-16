@@ -52,16 +52,16 @@ public class EnemyOne: MonoBehaviour
                 chase.PlayerChase();
             }
 
-            //else if (Vector3.Distance(playerOne.position, gameObject.transform.position) > enemyRadiusP1 + enemyTrailDistance)
-            //{
-            //    anim.SetBool("IsIdle", false);
-            //    anim.SetBool("IsWalking", false);
-            //    anim.SetBool("IsAttacking", false);
+            else if (Vector3.Distance(playerOne.position, gameObject.transform.position) > enemyRadiusP1 + enemyTrailDistance)
+            {
+                anim.SetBool("IsIdle", false);
+                anim.SetBool("IsWalking", false);
+                anim.SetBool("IsAttacking", false);
 
-            //    path.enabled = true;
-            //    chase.enabled = false;
-            //    path.PathBack();
-            //}
+                path.enabled = true;
+                chase.enabled = false;
+                path.PathBack();
+            }
         }
         else
         {
