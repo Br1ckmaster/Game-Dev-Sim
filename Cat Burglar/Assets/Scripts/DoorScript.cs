@@ -27,7 +27,7 @@ public class DoorScript : MonoBehaviour {
             {
                // if (doorKey)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
+					if (Input.GetKeyDown(KeyCode.LeftControl))
                     {
                         open = true;
                         close = false;
@@ -36,7 +36,7 @@ public class DoorScript : MonoBehaviour {
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.E))
+				if (Input.GetKeyDown(KeyCode.LeftControl))
                 {
                     close = true;
                     open = false;
@@ -56,7 +56,7 @@ public class DoorScript : MonoBehaviour {
         }
     }
 
-    void OnGUI()
+   /* void OnGUI()
     {
         if (inTrigger)
         {
@@ -76,5 +76,5 @@ public class DoorScript : MonoBehaviour {
                 }
             }
         }
-    }
+    }*/
 }

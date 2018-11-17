@@ -5,21 +5,23 @@ using UnityEngine.UI;
 
 public class UITutorial : MonoBehaviour 
 {
-	[SerializeField] private Image customImage1;
+	public bool inTrigger;
+	//public GameObject Player;
+	[SerializeField] private Image customImage;
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag ("Player")) 
+		if (other.CompareTag("Player")) 
 		{
-			customImage1.enabled = true;
+			customImage.enabled = true;
 		}
 	}
 
-	void OnTriggerExir(Collider other)
+	void OnTriggerExit(Collider other)
 	{
-		if (other.CompareTag ("Player")) 
+		if (other.CompareTag("Player")) 
 		{
-			customImage1.enabled = false;
+			customImage.enabled = false;
 		}
 	}
 }
