@@ -4092,21 +4092,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneLine
@@ -4119,16 +4104,6 @@ Prefab:
       objectReference: {fileID: 923574724}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
       propertyPath: playerOneText
       value: 
       objectReference: {fileID: 240080889}
@@ -4137,16 +4112,6 @@ Prefab:
       propertyPath: playerTwoText
       value: 
       objectReference: {fileID: 50770793}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -8534,31 +8499,6 @@ Prefab:
       propertyPath: playerTwoText
       value: 
       objectReference: {fileID: 50770793}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 65390403465246556, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65390403465246556, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65390403465246556, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
   m_IsPrefabParent: 0
@@ -9583,31 +9523,6 @@ Prefab:
       propertyPath: playerTwoText
       value: 
       objectReference: {fileID: 50770793}
-    - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65121355694681220, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
   m_IsPrefabParent: 0
