@@ -6,6 +6,7 @@ public class DogChase : MonoBehaviour {
 
 	public Transform playerOne;
 	//public Transform playerTwo;
+
 	static Animator anim;
 
 	// Use this for initialization
