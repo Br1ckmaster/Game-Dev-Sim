@@ -16,7 +16,7 @@ public class DogChase : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		if(playerOne != null)
 		{
 			if (Vector3.Distance (playerOne.position, this.transform.position) < 3) //detect player within range
 			{ 
