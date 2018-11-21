@@ -32,8 +32,7 @@ public class DogChase : MonoBehaviour {
 				//this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f); //rotation speed
 
 				anim.SetBool ("IsSleeping", false);
-				if (direction.magnitude > 3
-				) //follow distance behind player
+				if (direction.magnitude > 3) //follow distance behind player
 				{ 
 					this.transform.Translate (0, 0, 0.20f); //chase speed
 					anim.SetBool ("IsWakeUp", true);
