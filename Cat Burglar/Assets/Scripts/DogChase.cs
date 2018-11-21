@@ -6,7 +6,7 @@ public class DogChase : MonoBehaviour {
 
 	public Transform playerOne;
 	//public Transform playerTwo;
-	//public GameObject AudioSource;
+	public GameObject AudioSource;
 	//public float soundToPlay = -1.0f;
 	//public AudioClip[] audioClip;
 	//AudioSource audio;
@@ -41,7 +41,7 @@ public class DogChase : MonoBehaviour {
 				{
 					anim.SetBool ("IsBarking", true);
 					anim.SetBool ("IsWakeUp", false);
-					//AudioSource.GetComponent<AudioSource> ().enabled = true;
+					AudioSource.GetComponent<AudioSource> ().enabled = true;
 				}
 			} 
 			else 
