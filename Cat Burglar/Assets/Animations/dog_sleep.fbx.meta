@@ -89,7 +89,7 @@ ModelImporter:
     400078: tail_2_jnt
     400080: tail_2_loc
     400082: tail_3_jnt
-    7400000: Take 001
+    7400000: Dog Sleep
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -119,7 +119,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Dog Sleep
       takeName: Take 001
       firstFrame: 1
       lastFrame: 120
