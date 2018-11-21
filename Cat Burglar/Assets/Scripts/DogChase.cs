@@ -24,14 +24,15 @@ public class DogChase : MonoBehaviour {
 	{
 		
 		{
-			if (Vector3.Distance (playerOne.position, this.transform.position) < 5) { //detect player within range
+			if (Vector3.Distance (playerOne.position, this.transform.position) < 2) //detect player within range
+			{ 
 				Vector3 direction = playerOne.position - this.transform.position;
 				direction.y = 0; //calculate distance to player
 
 				//this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f); //rotation speed
 
 				anim.SetBool ("IsSleeping", false);
-				if (direction.magnitude > 5) //follow distance behind player
+				if (direction.magnitude > 2) //follow distance behind player
 				{ 
 					this.transform.Translate (0, 0, 0.20f); //chase speed
 					anim.SetBool ("IsWakeUp", true);
