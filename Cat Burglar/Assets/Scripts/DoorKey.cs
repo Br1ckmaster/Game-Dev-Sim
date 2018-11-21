@@ -32,12 +32,17 @@ public class DoorKey : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
-				source.PlayOneShot(clinkSound);
+                source.PlayOneShot(clinkSound);
                 DoorScript.doorKey = true;
-				//yield return new WaitForSeconds (0.5);
-                Destroy(this.gameObject);
+                StartCoroutine(Key());
             }
         }
+    }
+
+    IEnumerator Key()
+    {
+        yield return new WaitForSeconds (0.5f);
+        Destroy(this.gameObject);
     }
 
     /*private void OnGUI()
