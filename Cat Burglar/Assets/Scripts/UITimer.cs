@@ -28,7 +28,6 @@ public class UITimer : MonoBehaviour {
 		{
 			time -= Time.deltaTime;
 			//FillImg.fillAmount = time / timeAmt;
-            
             //timeText.text = "Time : " + time.ToString ("F");
         }
 	}
