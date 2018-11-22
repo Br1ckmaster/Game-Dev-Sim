@@ -5,24 +5,18 @@ using UnityEngine;
 public class DogChase : MonoBehaviour {
 
 	public Transform playerOne;
-	//public Transform playerTwo;
-	//public GameObject AudioSource;
-	//public float soundToPlay = -1.0f;
-	//public AudioClip[] audioClip;
-	//AudioSource audio;
 	static Animator anim;
 
 	// Use this for initialization
 	void Start () 
 	{
 		anim = GetComponent<Animator> ();
-		//audio = GetComponent ();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		if(playerOne != null)
 		{
 			if (Vector3.Distance (playerOne.position, this.transform.position) < 3) //detect player within range
 			{ 
@@ -42,7 +36,6 @@ public class DogChase : MonoBehaviour {
 				{
 					anim.SetBool ("IsBarking", true);
 					anim.SetBool ("IsWakeUp", false);
-					//AudioSource.GetComponent<AudioSource> ().enabled = true;
 				}
 			} 
 			else 

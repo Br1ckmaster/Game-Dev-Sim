@@ -6,10 +6,10 @@ using UnityEngine.AI;
 public class Chase : MonoBehaviour
 {  
     public Animator anim;
+    public GameObject player;
 
     private NavMeshAgent nav;
     private EnemyOne enemy;
-    public GameObject player;
 
     void Awake()
     {
@@ -24,20 +24,6 @@ public class Chase : MonoBehaviour
 
     public void PlayerChase()
     {
-        //directionOne.y = 0;
-        //this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(directionOne), 0.15f);
-        //anim.SetBool("IsIdle", false);
-        //if (directionOne.magnitude > 1)
-        //{
-        //    this.transform.Translate(0, 0, nav.speed);
-        //    anim.SetBool("IsWalking", true);
-        //    anim.SetBool("IsAttacking", false);
-        //}
-        //else
-        //{
-        //    anim.SetBool("IsAttacking", true);
-        //    anim.SetBool("IsWalking", false);
-        //}
         if (enemy == null)
         {
             return;

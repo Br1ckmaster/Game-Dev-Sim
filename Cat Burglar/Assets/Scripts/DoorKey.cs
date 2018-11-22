@@ -45,11 +45,4 @@ public class DoorKey : MonoBehaviour {
         Destroy(this.gameObject);
     }
 
-    /*private void OnGUI()
-    {
-        if (inTrigger)
-        {
-            GUI.Box(new Rect(0, 60, 200, 25), "Press Left Control to steal");
-        }
-    }*/
 }

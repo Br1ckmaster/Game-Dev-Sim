@@ -33,27 +33,30 @@ public class PickupObject : MonoBehaviour
     private static bool  p2ThirdRadiusChanged;
 
 
-    private static int playerOneScore = 0;
-    private static int playerTwoScore = 0;
+    private static int playerOneScore;
+    private static int playerTwoScore;
 
     private int playerOneFinal = 0;
     private int playerTwoFinal = 0;
 
+    void Awake()
+    {
+        playerOneScore = 0;
+        playerTwoScore = 0;
+
+        p1FirstRadiusChanged = false;
+        p1SecondRadiusChanged = false;
+        p1ThirdRadiusChanged = false;
+
+        p2FirstRadiusChanged = false;
+        p2SecondRadiusChanged = false;
+        p2ThirdRadiusChanged = false;
+    }
+
     void Update()
     {
-        //if (playerOneCollided && Input.GetButton("P1_Pickup") &&
-        //!Input.GetButton("P1_Horizontal") && !Input.GetButton("P1_Vertical"))
-        //{
-        //    StartCoroutine(PlayerOnePickupDelay());
-        //}
 
-        //else if (playerTwoCollided && Input.GetButton("P2_Pickup") &&
-        //!Input.GetButton("P2_Horizontal") && !Input.GetButton("P2_Vertical"))
-        //{
-        //    StartCoroutine(PlayerTwoPickupDelay());
-        //}
-
-        /*else */if (playerOneCollided && Input.GetButton("P1_Pickup"))
+        if (playerOneCollided && Input.GetButton("P1_Pickup"))
         {
             PlayerOnePickup();
         }
@@ -136,62 +139,6 @@ public class PickupObject : MonoBehaviour
 
     }
 
-    //IEnumerator PlayerOnePickupDelay()
-    //{
-    //    yield return new WaitForSeconds(0.5f);
-
-    //    Destroy(gameObject);
-
-    //    switch (gameObject.tag)
-    //    {
-    //        case "GroupA":
-    //            playerOneScore += 1;
-    //            playerOneFinal += playerOneScore;
-    //            playerOneText.text = "Score: " + playerOneFinal.ToString();
-    //            break;
-
-    //        case "GroupB":
-    //            playerOneScore += 2;
-    //            playerOneFinal += playerOneScore;
-    //            playerOneText.text = "Score: " + playerOneFinal.ToString();
-    //            break;
-
-    //        case "GroupC":
-    //            playerOneScore += 3;
-    //            playerOneFinal += playerOneScore;
-    //            playerOneText.text = "Score: " + playerOneFinal.ToString();
-    //            break;
-    //    }     
-    //}
-
-    //IEnumerator PlayerTwoPickupDelay()
-    //{
-    //    yield return new WaitForSeconds(0.5f);
-
-    //    Destroy(gameObject);
-
-    //    switch (gameObject.tag)
-    //    {
-    //        case "GroupA":
-    //            playerTwoScore += 1;
-    //            playerTwoFinal += playerTwoScore;
-    //            playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-    //            break;
-
-    //        case "GroupB":
-    //            playerTwoScore += 2;
-    //            playerTwoFinal += playerTwoScore;
-    //            playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-    //            break;
-
-    //        case "GroupC":
-    //            playerTwoScore += 3;
-    //            playerTwoFinal += playerTwoScore;
-    //            playerTwoText.text = "Score: " + playerTwoFinal.ToString();
-    //            break;
-    //    }
-        
-    //}
 
     void OnDestroy()
     {
