@@ -267,7 +267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.x
-      value: 8.500004
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -531,7 +531,7 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1236037782}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: playerTwoText
@@ -1054,7 +1054,7 @@ Prefab:
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1236037782}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerTwoText
@@ -2982,6 +2982,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1236037782 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114593375042661308, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 374225380}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1239299266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,7 +3517,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalScale.x
-      value: 8.500004
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4266,7 +4272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1751448325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5050,9 +5056,9 @@ Prefab:
       objectReference: {fileID: 1974299005}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: enemyOneRangeP2
+      propertyPath: playerTwoLine
       value: 
-      objectReference: {fileID: 1870906324}
+      objectReference: {fileID: 110349551}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneRangeP1
@@ -5060,43 +5066,18 @@ Prefab:
       objectReference: {fileID: 1870906324}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: playerTwoLine
+      propertyPath: enemyOneRangeP2
       value: 
-      objectReference: {fileID: 110349551}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1870906324}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneText
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+      objectReference: {fileID: 1236037782}
+    - target: {fileID: 114398874145078010, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 2
+      propertyPath: inTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
