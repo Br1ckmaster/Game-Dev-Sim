@@ -8,7 +8,10 @@ public class PlayerTwoController : MonoBehaviour
 
     CharacterController playerTwo;
 	Animator animControl;
-	private void Start()
+
+    public PlayerLine playerTwoLine;
+
+    private void Start()
     {
         playerTwo = GetComponent<CharacterController>();
 		animControl = GameObject.FindGameObjectWithTag("PlayerTwo").GetComponent<Animator>();

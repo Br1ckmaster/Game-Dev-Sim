@@ -4,27 +4,40 @@ using UnityEngine;
 
 public class NightCycle : MonoBehaviour
 {
-    [SerializeField] private Light sun;
-    [SerializeField] private float secondsInFullDay = 120f; //how many seconds in a day
+    [SerializeField]
+    private Light sun;
+    [SerializeField]
+    private float secondsInFullDay = 120f; //how many seconds in a day
 
-    [Range(0, 1)] [SerializeField] private float currentTimeOfDay = 0; //slider in inspector
+   
+    [SerializeField]
+    [Range(0, 1)] private float currentTimeOfDay = 0; //slider in inspector
+
+    public PlayerLine playerOneRadius;
+    public PlayerLine playerTwoRadius;
+
+    public EnemyOne enemyOneDetectionP1;
+    public EnemyOne enemyOneDetectionP2;
+
     private float timeMultiplier = 1f;
     private float sunInitialIntensity;
 
     void Start()
     {
         sunInitialIntensity = sun.intensity; //sun is equal to the directional light intensity
+
     }
 
     void Update()
     {
         UpdateSun();
-
         currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier; //current time of day over time every frame divide by the seconds in a day then times it by the time multiplier
 
         if (currentTimeOfDay >= 0.28f)
         {
             currentTimeOfDay = 0.28f; //resets day
+            playerOneRadius.radius = 20;
+            enemyOneDetectionP1.enemyRadiusP1 = 24;
         }
     }
 
@@ -43,12 +56,6 @@ public class NightCycle : MonoBehaviour
         {
             intensityMultiplier = Mathf.Clamp01((currentTimeOfDay - 0.23f) * (1 / 0.02f)); //set intensity value between 0 and 1 which is the value just before sunrise allow it to fade in
         }
-
-        //else if (currentTimeOfDay >= 0.73f)
-        //{
-        //    intensityMultiplier = Mathf.Clamp01(1 - ((currentTimeOfDay - 0.73f) * (1 / 0.02f))); //fade intensity out
-        //}
-
         sun.intensity = sunInitialIntensity * intensityMultiplier;
     }
 }

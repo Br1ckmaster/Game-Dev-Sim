@@ -9,14 +9,11 @@ public class PickupObject : MonoBehaviour
 {
    
     //public Text scoreText;
-    public PlayerLine playerOneLine;
-    public PlayerLine playerTwoLine;
+    public PlayerLine playerOneRadius;
+    public PlayerLine playerTwoRadius;
 
-    public EnemyOne enemyOneRangeP1;
-    public EnemyOne enemyOneRangeP2;
-
-    public EnemyTwo enemyTwoRangeP1;
-    public EnemyTwo enemyTwoRangeP2;
+    public EnemyOne enemyOneDetection;
+    public EnemyTwo enemyTwoDetection;
 
     public Text playerOneText;
     public Text playerTwoText;
@@ -31,7 +28,6 @@ public class PickupObject : MonoBehaviour
     private static bool  p2FirstRadiusChanged;
     private static bool  p2SecondRadiusChanged;
     private static bool  p2ThirdRadiusChanged;
-
 
     private static int playerOneScore;
     private static int playerTwoScore;
@@ -51,11 +47,11 @@ public class PickupObject : MonoBehaviour
         p2FirstRadiusChanged = false;
         p2SecondRadiusChanged = false;
         p2ThirdRadiusChanged = false;
+
     }
 
     void Update()
     {
-
         if (playerOneCollided && Input.GetButton("P1_Pickup"))
         {
             PlayerOnePickup();
@@ -109,7 +105,6 @@ public class PickupObject : MonoBehaviour
                 playerOneText.text = " " + playerOneFinal.ToString();
                 break;
         }
-
     }
 
     void PlayerTwoPickup()
@@ -136,7 +131,6 @@ public class PickupObject : MonoBehaviour
                 playerTwoText.text = " " + playerTwoFinal.ToString();
                 break;
         }
-
     }
 
 
@@ -144,53 +138,50 @@ public class PickupObject : MonoBehaviour
     {
         if (playerOneFinal >= 3 && !p1FirstRadiusChanged)
         {
-            playerOneLine.radius += 1;
-            enemyOneRangeP1.enemyRadiusP1 += 1;
-            //enemyTwoRangeP1.enemyRadiusP1 += 1;
+            playerOneRadius.radius += 1;
+            enemyOneDetection.enemyRadiusP1 += 1;
+            //enemyTwoDetection.enemyRadiusP1 += 1;
             p1FirstRadiusChanged = true;
         }
 
         else if (playerOneFinal >= 7 && !p1SecondRadiusChanged)
         {
-            playerOneLine.radius += 2;
-            enemyOneRangeP1.enemyRadiusP1 += 2.5;
-           // enemyTwoRangeP1.enemyRadiusP1 += 2.5;
+            playerOneRadius.radius += 2;
+            enemyOneDetection.enemyRadiusP1 += 2.5;
+           // enemyTwoDetection.enemyRadiusP1 += 2.5;
             p1SecondRadiusChanged = true;
         }
 
         else if (playerOneFinal >= 10 && !p1ThirdRadiusChanged)
         {
-            playerOneLine.radius += 3;
-            enemyOneRangeP1.enemyRadiusP1 += 2.9;
-            //enemyTwoRangeP1.enemyRadiusP1 += 2.9;
+            playerOneRadius.radius += 3;
+            enemyOneDetection.enemyRadiusP1 += 2.9;
+            //enemyTwoDetection.enemyRadiusP1 += 2.9;
             p1ThirdRadiusChanged = true;
         }
 
         if (playerTwoFinal >= 3 && !p2FirstRadiusChanged)
         {
-            playerTwoLine.radius += 1;
-            enemyOneRangeP2.enemyRadiusP2 += 1;
-            //enemyTwoRangeP2.enemyRadiusP2 += 1;
+            playerTwoRadius.radius += 1;
+            enemyOneDetection.enemyRadiusP2 += 1;
+            //enemyTwoDetection.enemyRadiusP2 += 1;
             p2FirstRadiusChanged = true;
         }
 
         else if (playerTwoFinal >= 7 && !p2SecondRadiusChanged)
         {
-            playerTwoLine.radius += 2;
-            enemyOneRangeP2.enemyRadiusP2 += 2.5;
-            //enemyTwoRangeP2.enemyRadiusP2 += 2.5;
+            playerTwoRadius.radius += 2;
+            enemyOneDetection.enemyRadiusP2 += 2.5;
+            //enemyTwoDetection.enemyRadiusP2 += 2.5;
             p2SecondRadiusChanged = true;
         }
 
         else if (playerTwoFinal >= 10 && !p2ThirdRadiusChanged)
         {
-            playerTwoLine.radius += 3;
-            enemyOneRangeP2.enemyRadiusP2 += 2.9;
-           // enemyTwoRangeP2.enemyRadiusP2 += 2.9;
+            playerTwoRadius.radius += 3;
+            enemyOneDetection.enemyRadiusP2 += 2.9;
+           // enemyTwoDetection.enemyRadiusP2 += 2.9;
             p2ThirdRadiusChanged = true;
         }
-
-
     }
-
 }
