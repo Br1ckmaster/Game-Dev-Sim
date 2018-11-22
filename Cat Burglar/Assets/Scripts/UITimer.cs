@@ -6,39 +6,35 @@ using UnityEngine.UI;
 public class UITimer : MonoBehaviour
 {
 
-    ////Image FillImg;
-    //float timeAmt = 10;
-    //float time;
+    Image fillImg;
+    public float timeAmt = 120;
+    private float time;
 
-    public NightCycle nightCycle;
+    //public NightCycle nightCycle;
 
-    private float x = 0;
-    private float y = 0;
-    private float z = 90;
+    //private float x = 0;
+    //private float y = 0;
+    //private float z = 90;
 	//public Text timeText;
 
 	void Start () 
 	{
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        rectTransform.Rotate(new Vector3(x, y, z));
-        //FillImg = this.GetComponent<Image> ();
-		//time = timeAmt;
+        //RectTransform rectTransform = GetComponent<RectTransform>();
+        //rectTransform.Rotate(new Vector3(x, y, z));
+        fillImg = this.GetComponent<Image> ();
+		time = timeAmt;
 	}
 	
 	void Update () 
 	{
 
-		//if (time > 0) 
-		//{
-		//	time -= Time.deltaTime;
-		//	//FillImg.fillAmount = time / timeAmt;
+		if (time > 0) 
+		{
+			time -= Time.deltaTime;
+			fillImg.fillAmount = time / timeAmt;
             
-  //          //timeText.text = "Time : " + time.ToString ("F");
-  //      }
+           // timeText.text = "Time : " + time.ToString ("F");
+        }
 	}
 
-    void UpdateHand()
-    {
-
-    }
 }
