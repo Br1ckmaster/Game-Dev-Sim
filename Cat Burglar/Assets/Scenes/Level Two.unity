@@ -4367,9 +4367,9 @@ MonoBehaviour:
   sun: {fileID: 1284351192}
   secondsInFullDay: 120
   currentTimeOfDay: 0
-  playerOneRadius: {fileID: 0}
+  playerOneRadius: {fileID: 1679738725}
   playerTwoRadius: {fileID: 0}
-  enemyOneDetectionP1: {fileID: 0}
+  enemyOneDetectionP1: {fileID: 1316352958}
   enemyOneDetectionP2: {fileID: 0}
 --- !u!114 &1316352958 stripped
 MonoBehaviour:
@@ -4623,6 +4623,23 @@ Transform:
   m_Father: {fileID: 1185607805}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1480543350 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1345764654998898, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1131680137}
+--- !u!114 &1480543352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480543350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd136852f024b60b594df0da223f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeAmt: 120
 --- !u!4 &1502708397 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4974760561106494, guid: 6d12243d032b9e3489b9dea42cef18e3,
