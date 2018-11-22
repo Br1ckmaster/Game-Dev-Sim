@@ -558,7 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
   Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  bpm: 120
+  BPM: 120
 --- !u!54 &129289252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2444,7 +2444,7 @@ Transform:
   m_GameObject: {fileID: 1126390962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.21, y: 1, z: 2.61}
-  m_LocalScale: {x: 2, y: 2, z: 4.5}
+  m_LocalScale: {x: 1.8, y: 2, z: 4.5}
   m_Children: []
   m_Father: {fileID: 1177884065}
   m_RootOrder: 4
@@ -2940,15 +2940,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.48
+      value: -4.36
       objectReference: {fileID: 0}
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.94
+      value: -3.99
       objectReference: {fileID: 0}
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalRotation.x
