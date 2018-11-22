@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class UITimer : MonoBehaviour {
 
-	Image FillImg;
+
+    
+	//Image FillImg;
 	float timeAmt = 10;
 	float time;
 	//public Text timeText;
@@ -13,7 +15,9 @@ public class UITimer : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		FillImg = this.GetComponent<Image> ();
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        rectTransform.Rotate(new Vector3(0, 0, 90));
+        //FillImg = this.GetComponent<Image> ();
 		time = timeAmt;
 	}
 	
@@ -23,8 +27,9 @@ public class UITimer : MonoBehaviour {
 		if (time > 0) 
 		{
 			time -= Time.deltaTime;
-			FillImg.fillAmount = time / timeAmt;
-			//timeText.text = "Time : " + time.ToString ("F");
-		}
+			//FillImg.fillAmount = time / timeAmt;
+            
+            //timeText.text = "Time : " + time.ToString ("F");
+        }
 	}
 }
