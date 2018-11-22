@@ -8,6 +8,7 @@ public class PlayerOneController : MonoBehaviour
 
     CharacterController playerOne;
     Animator animControl;
+
     private void Start()
     {
         playerOne = GetComponent<CharacterController>();
@@ -33,7 +34,6 @@ public class PlayerOneController : MonoBehaviour
 
     void PlayerAnimator()
     {
-
         if(Input.GetButton("P1_Horizontal") || (Input.GetButton("P1_Vertical")))
         {
             animControl.SetBool("IsWalking", true);

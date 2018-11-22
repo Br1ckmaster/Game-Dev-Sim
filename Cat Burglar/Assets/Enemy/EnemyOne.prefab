@@ -203,11 +203,11 @@ GameObject:
   - component: {fileID: 95681048739662714}
   - component: {fileID: 114144691843486816}
   - component: {fileID: 195615881331256402}
-  - component: {fileID: 54906467976896960}
   - component: {fileID: 136860428988044470}
   - component: {fileID: 114547065911757194}
-  - component: {fileID: 114486185916687602}
-  - component: {fileID: 114197025994440634}
+  - component: {fileID: 54657132041623438}
+  - component: {fileID: 114128342473296586}
+  - component: {fileID: 114948171426585542}
   m_Layer: 0
   m_Name: EnemyOne
   m_TagString: Enemy
@@ -403,15 +403,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796388299833706}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.13999954, y: -1.1903592e-19, z: 6.55}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.82, y: 2.3412719e-17, z: -1.608}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274652099110954}
   - {fileID: 4451577681641088}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4787433100981458
 Transform:
   m_ObjectHideFlags: 1
@@ -454,7 +454,7 @@ Transform:
   m_Father: {fileID: 4566019053524732}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54906467976896960
+--- !u!54 &54657132041623438
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -486,6 +486,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114128342473296586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796388299833706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de96d554837d2940b18b46b7762715f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95681048739662714}
+  player: {fileID: 0}
 --- !u!114 &114144691843486816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -503,30 +516,6 @@ MonoBehaviour:
   enemyTrailDistance: 3
   anim: {fileID: 0}
   originalPos: {x: 0, y: 0, z: 0}
---- !u!114 &114197025994440634
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796388299833706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcd855344f792346aa5399bb6ab22c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114486185916687602
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796388299833706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de96d554837d2940b18b46b7762715f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  player: {fileID: 0}
 --- !u!114 &114547065911757194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -540,7 +529,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
   Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  bpm: 120
+  BPM: 120
+--- !u!114 &114948171426585542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796388299833706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adcd855344f792346aa5399bb6ab22c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136860428988044470
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -621,7 +621,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

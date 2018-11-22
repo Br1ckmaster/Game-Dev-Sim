@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114341808633045928}
   - component: {fileID: 65390403465246556}
   - component: {fileID: 122122100632537420}
+  - component: {fileID: 114224018319135158}
   m_Layer: 0
   m_Name: Sphere C
   m_TagString: GroupC
@@ -37,8 +38,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1452836150989282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 0.5, z: -2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.38, y: 1.012, z: -4.233}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,8 +96,20 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114224018319135158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452836150989282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01baa089cffc7c34bb4bc72ef45dbb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customImage: {fileID: 0}
 --- !u!114 &114341808633045928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb341d9136509b4084b233c991bb501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOneLine: {fileID: 0}
-  playerTwoLine: {fileID: 0}
-  enemyOneRangeP1: {fileID: 0}
-  enemyOneRangeP2: {fileID: 0}
+  playerOneRadius: {fileID: 0}
+  playerTwoRadius: {fileID: 0}
+  enemyOneDetection: {fileID: 0}
+  enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 0}
   playerTwoText: {fileID: 0}
 --- !u!122 &122122100632537420

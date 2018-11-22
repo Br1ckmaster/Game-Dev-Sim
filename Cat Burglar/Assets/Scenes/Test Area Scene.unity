@@ -209,7 +209,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -1876,7 +1876,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -2130,7 +2130,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -2379,6 +2379,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1192657110 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+    type: 2}
+  m_PrefabInternal: {fileID: 1398711032}
+  m_Script: {fileID: 11500000, guid: 9aa7040eeef2c624aa724bc8fd595d30, type: 3}
 --- !u!1001 &1207252957
 Prefab:
   m_ObjectHideFlags: 0
@@ -3213,7 +3219,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -3881,7 +3887,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2
@@ -4190,7 +4196,7 @@ Prefab:
         type: 2}
       propertyPath: enemyOneRangeP1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1192657110}
     - target: {fileID: 114248627581212022, guid: 9c60e461689b4d041ba1b9f21b0b1ffb,
         type: 2}
       propertyPath: enemyOneRangeP2

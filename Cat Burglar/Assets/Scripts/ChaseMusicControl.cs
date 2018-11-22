@@ -7,28 +7,25 @@ public class ChaseMusicControl : MonoBehaviour {
 
     public AudioMixerSnapshot BGM;
     public AudioMixerSnapshot Chase;
-    //public AudioClip[] stings;
-    //public AudioSource stingSource;
-    public float bpm = 120;
 
-    private float m_TransitionIn;
-    private float m_TransitionOut;
-    private float m_QuarterNote;
+    public float BPM = 120;
 
+    private float transitionIn;
+    private float transitionOut;
+    private float quaterNote;
 
-    // Use this for initialization
     void Start ()
     {
-        m_QuarterNote = 60 / bpm;
-        m_TransitionIn = m_QuarterNote;
-        m_TransitionOut = m_QuarterNote * 4;
+        quaterNote = 60 / BPM;
+        transitionIn = quaterNote;
+        transitionOut = quaterNote * 4;
 	}
 	
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("AudioTriggerChase"))
         {
-            Chase.TransitionTo(m_TransitionIn);
+            Chase.TransitionTo(transitionIn);
         }
     }
 
@@ -36,7 +33,7 @@ public class ChaseMusicControl : MonoBehaviour {
     {
        if (other.CompareTag("AudioTriggerChase"))
        {
-            BGM.TransitionTo(m_TransitionOut);
+            BGM.TransitionTo(transitionOut);
        }
     }
 

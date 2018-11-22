@@ -5,6 +5,9 @@ using UnityEngine;
 public class DoorKey : MonoBehaviour {
 
     public bool inTrigger;
+	public AudioClip clinkSound;
+	private AudioSource source;
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -16,23 +19,30 @@ public class DoorKey : MonoBehaviour {
         inTrigger = false;
     }
 
+	void Awake () 
+	{
+
+		source = GetComponent<AudioSource>();
+
+	}
+
     void Update()
     {
         if (inTrigger)
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
+                source.PlayOneShot(clinkSound);
                 DoorScript.doorKey = true;
-                Destroy(this.gameObject);
+                StartCoroutine(Key());
             }
         }
     }
 
-    private void OnGUI()
+    IEnumerator Key()
     {
-        if (inTrigger)
-        {
-            GUI.Box(new Rect(0, 60, 200, 25), "Press Left Control to steal");
-        }
+        yield return new WaitForSeconds (0.5f);
+        Destroy(this.gameObject);
     }
+
 }
