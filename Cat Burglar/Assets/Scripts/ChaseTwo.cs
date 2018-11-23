@@ -34,9 +34,9 @@ public class ChaseTwo : MonoBehaviour {
     {
         //anim.SetBool("IsWalking", false);
         //anim.SetBool("IsAttacking", true);
-        switch (collision.gameObject.name)
+        switch (collision.gameObject.tag)
         {
-            case "PlayerOne": Destroy(player); break;
+            case "Player": Destroy(player); break;
         }
     }
 }

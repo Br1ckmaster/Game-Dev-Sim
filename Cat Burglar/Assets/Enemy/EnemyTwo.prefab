@@ -205,9 +205,9 @@ GameObject:
   - component: {fileID: 136515211249367656}
   - component: {fileID: 114309292791666794}
   - component: {fileID: 54246131207919258}
-  - component: {fileID: 114050879766832664}
-  - component: {fileID: 114589168444778248}
-  - component: {fileID: 114327884225193990}
+  - component: {fileID: 114629727280780470}
+  - component: {fileID: 114311381403713662}
+  - component: {fileID: 114526701054954444}
   m_Layer: 0
   m_Name: EnemyTwo
   m_TagString: Enemy
@@ -407,7 +407,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1973179638423500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 11.217001, y: 0, z: -5.5350013}
+  m_LocalPosition: {x: 12.904478, y: 0, z: -4.2085886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4925949731019022}
@@ -422,7 +422,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044917100929772}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4913377794285704}
@@ -486,23 +486,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114050879766832664
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1973179638423500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa7040eeef2c624aa724bc8fd595d30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerOne: {fileID: 0}
-  enemyRadiusP1: 2
-  enemyRadiusP2: 2
-  enemyTrailDistance: 3
-  anim: {fileID: 0}
-  originalPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114309292791666794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -516,8 +499,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
   Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  bpm: 120
---- !u!114 &114327884225193990
+  BPM: 120
+--- !u!114 &114311381403713662
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -525,22 +508,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973179638423500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcd855344f792346aa5399bb6ab22c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114589168444778248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1973179638423500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de96d554837d2940b18b46b7762715f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0544ef21b7bf2e14caf60add9364d1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   player: {fileID: 0}
+--- !u!114 &114526701054954444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973179638423500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d12813e4d774a46b5b3098f8fa68da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114629727280780470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973179638423500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32834d9cd40d9844f9f7284b6c8cef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOne: {fileID: 0}
+  enemyRadiusP1: 2
+  enemyRadiusP2: 2
+  enemyTrailDistance: 3
+  anim: {fileID: 0}
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!136 &136515211249367656
 CapsuleCollider:
   m_ObjectHideFlags: 1
