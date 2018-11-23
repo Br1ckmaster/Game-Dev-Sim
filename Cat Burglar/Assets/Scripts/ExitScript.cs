@@ -12,12 +12,12 @@ public class ExitScript : MonoBehaviour {
 
     private void Update()
     {
-        if(playerOneCollided && Input.GetKeyDown(KeyCode.Space))
+        if(playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
         {
             Destroy(playerOne);
         }
 
-        else if (playerTwoCollided && Input.GetKeyDown(KeyCode.Space))
+        else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
         {
             Destroy(playerTwo);
         }

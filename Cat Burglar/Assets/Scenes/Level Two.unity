@@ -154,36 +154,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: playerOneLine
-      value: 
-      objectReference: {fileID: 1679738725}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerTwoLine
-      value: 
-      objectReference: {fileID: 410531977}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerOneText
-      value: 
-      objectReference: {fileID: 1374018097}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 303248581}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
       propertyPath: playerOneRadius
       value: 
       objectReference: {fileID: 1679738725}
@@ -197,6 +167,21 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: playerOneText
+      value: 
+      objectReference: {fileID: 1374018097}
+    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: playerTwoText
+      value: 
+      objectReference: {fileID: 303248581}
+    - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -413,6 +398,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -1083,6 +1073,12 @@ Transform:
   m_Father: {fileID: 1124413136}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285035352 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114941809301847752, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1131680137}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &303248581 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114978971768948448, guid: de303db76e9777c40be93191f07031fe,
@@ -1744,6 +1740,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114134700756661496, guid: 6d12243d032b9e3489b9dea42cef18e3,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
   m_IsPrefabParent: 0
@@ -2172,6 +2173,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114224018319135158, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
   m_IsPrefabParent: 0
@@ -4367,10 +4373,11 @@ MonoBehaviour:
   sun: {fileID: 1284351192}
   secondsInFullDay: 120
   currentTimeOfDay: 0
-  playerOneRadius: {fileID: 0}
+  playerOneRadius: {fileID: 1679738725}
   playerTwoRadius: {fileID: 0}
-  enemyOneDetectionP1: {fileID: 0}
+  enemyOneDetectionP1: {fileID: 1316352958}
   enemyOneDetectionP2: {fileID: 0}
+  enemyTwoDetectionP1: {fileID: 0}
 --- !u!114 &1316352958 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
@@ -4877,6 +4884,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114224018319135158, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
   m_IsPrefabParent: 0
@@ -5310,6 +5322,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -5411,6 +5428,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114134700756661496, guid: 6d12243d032b9e3489b9dea42cef18e3,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
   m_IsPrefabParent: 0
@@ -5714,6 +5736,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -6012,6 +6039,11 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 285035352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
