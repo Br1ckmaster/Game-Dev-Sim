@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 224028056255584428}
   - component: {fileID: 222585067507057096}
   - component: {fileID: 114427379099460796}
+  - component: {fileID: 114695509747450088}
   m_Layer: 5
   m_Name: Time Bar Colour
   m_TagString: Untagged
@@ -791,6 +792,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114695509747450088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345764654998898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd136852f024b60b594df0da223f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeAmt: 120
 --- !u!114 &114703286863669280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -904,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cd136852f024b60b594df0da223f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nightCycle: {fileID: 0}
+  timeAmt: 120
 --- !u!114 &114941809301847752
 MonoBehaviour:
   m_ObjectHideFlags: 1

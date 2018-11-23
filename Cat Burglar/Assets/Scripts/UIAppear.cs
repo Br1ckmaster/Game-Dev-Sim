@@ -23,4 +23,9 @@ public class UIAppear : MonoBehaviour {
         }
     }
 
+    private void OnDestroy()
+    {
+        customImage.enabled = false;
+    }
+
 }
