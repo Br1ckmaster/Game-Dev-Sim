@@ -4832,12 +4832,12 @@ Transform:
   - {fileID: 117549717}
   - {fileID: 852865036}
   - {fileID: 474982220}
-  - {fileID: 2024428413}
-  - {fileID: 1410084265}
   - {fileID: 760596869}
+  - {fileID: 1410084265}
   - {fileID: 1542832147}
   - {fileID: 561583015}
   - {fileID: 844767015}
+  - {fileID: 2024428413}
   - {fileID: 59936542}
   - {fileID: 466695993}
   - {fileID: 1575815173}
@@ -5636,22 +5636,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 114314302600748730, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+    - target: {fileID: 114629727280780470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 319785344}
-    - target: {fileID: 114314302600748730, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-        type: 2}
-      propertyPath: playerTwo
-      value: 
-      objectReference: {fileID: 923574722}
-    - target: {fileID: 114050879766832664, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-        type: 2}
-      propertyPath: playerOne
-      value: 
-      objectReference: {fileID: 319785344}
-    - target: {fileID: 114589168444778248, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
       propertyPath: player
       value: 
@@ -7891,11 +7881,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e60d059f7c6b04a498e82ebb6630b250, type: 3}
   m_PrefabInternal: {fileID: 364079787}
---- !u!4 &923574722 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1248615185}
 --- !u!114 &923574724 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114239460435288446, guid: 3b26f4b9528e56c44b7c522a8a40f4e8,
@@ -8194,7 +8179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 2045392298}
-  secondsInFullDay: 120
+  secondsInFullDay: 425
   currentTimeOfDay: 0
   playerOneRadius: {fileID: 319785339}
   playerTwoRadius: {fileID: 0}
