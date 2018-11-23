@@ -19,13 +19,14 @@ public class NightCycle : MonoBehaviour
     public EnemyOne enemyOneDetectionP1;
     public EnemyOne enemyOneDetectionP2;
 
+    public EnemyTwo enemyTwoDetectionP1;
+
     private float timeMultiplier = 1f;
     private float sunInitialIntensity;
 
     void Start()
     {
         sunInitialIntensity = sun.intensity; //sun is equal to the directional light intensity
-
     }
 
     void Update()
@@ -37,7 +38,8 @@ public class NightCycle : MonoBehaviour
         {
             currentTimeOfDay = 0.28f; //resets day
             playerOneRadius.radius = 20;
-            enemyOneDetectionP1.enemyRadiusP1 = 24;
+            enemyOneDetectionP1.enemyRadiusP1 = 22;
+            enemyTwoDetectionP1.enemyRadiusP1 = 22;
         }
     }
 
