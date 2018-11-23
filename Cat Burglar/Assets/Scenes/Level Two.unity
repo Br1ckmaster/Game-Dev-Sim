@@ -4365,13 +4365,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 1284351192}
-  secondsInFullDay: 120
+  secondsInFullDay: 425
   currentTimeOfDay: 0
   playerOneRadius: {fileID: 1679738725}
   playerTwoRadius: {fileID: 0}
   enemyOneDetectionP1: {fileID: 1316352958}
   enemyOneDetectionP2: {fileID: 0}
-  enemyTwoDetectionP1: {fileID: 0}
+  enemyTwoDetectionP1: {fileID: 1650277875}
 --- !u!114 &1316352958 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
@@ -5182,6 +5182,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1650277875 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114629727280780470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1650277874}
+  m_Script: {fileID: 11500000, guid: 32834d9cd40d9844f9f7284b6c8cef8a, type: 3}
 --- !u!114 &1679738725 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114312103063868914, guid: 3faf5bc08d71608498e0bacf82210883,
