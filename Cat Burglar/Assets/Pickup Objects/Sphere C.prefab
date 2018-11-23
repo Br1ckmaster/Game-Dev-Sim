@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 65390403465246556}
   - component: {fileID: 122122100632537420}
   - component: {fileID: 114224018319135158}
+  - component: {fileID: 114796348265334168}
   m_Layer: 0
   m_Name: Sphere C
   m_TagString: GroupC
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1452836150989282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.38, y: 1.012, z: -4.233}
+  m_LocalPosition: {x: 7.48, y: 0.38, z: -4.3399997}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,6 +128,18 @@ MonoBehaviour:
   enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 0}
   playerTwoText: {fileID: 0}
+--- !u!114 &114796348265334168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452836150989282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d79bc4ead9f1342a5493484b09ca6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customImage: {fileID: 0}
 --- !u!122 &122122100632537420
 Halo:
   m_ObjectHideFlags: 1

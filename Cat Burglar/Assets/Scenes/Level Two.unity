@@ -152,6 +152,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114290549598006922, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneRadius
@@ -403,6 +408,11 @@ Prefab:
       propertyPath: customImage
       value: 
       objectReference: {fileID: 285035352}
+    - target: {fileID: 114290549598006922, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -1695,36 +1705,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
+    - target: {fileID: 114627013983765694, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
-      propertyPath: playerOneLine
+      propertyPath: customImage
       value: 
-      objectReference: {fileID: 1679738725}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: playerTwoLine
-      value: 
-      objectReference: {fileID: 410531977}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: playerOneText
-      value: 
-      objectReference: {fileID: 1374018097}
-    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
-        type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 303248581}
+      objectReference: {fileID: 1131680138}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: playerOneRadius
@@ -1740,6 +1725,16 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
+        type: 2}
+      propertyPath: playerOneText
+      value: 
+      objectReference: {fileID: 1374018097}
+    - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
+        type: 2}
+      propertyPath: playerTwoText
+      value: 
+      objectReference: {fileID: 303248581}
     - target: {fileID: 114134700756661496, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: customImage
@@ -2128,36 +2123,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+    - target: {fileID: 114796348265334168, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
-      propertyPath: playerOneLine
+      propertyPath: customImage
       value: 
-      objectReference: {fileID: 1679738725}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerTwoLine
-      value: 
-      objectReference: {fileID: 410531977}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerOneText
-      value: 
-      objectReference: {fileID: 1374018097}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 303248581}
+      objectReference: {fileID: 1131680138}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: playerOneRadius
@@ -2173,6 +2143,16 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: playerOneText
+      value: 
+      objectReference: {fileID: 1374018097}
+    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: playerTwoText
+      value: 
+      objectReference: {fileID: 303248581}
     - target: {fileID: 114224018319135158, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: customImage
@@ -3916,9 +3896,23 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436324205129352, guid: de303db76e9777c40be93191f07031fe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802399742888884, guid: de303db76e9777c40be93191f07031fe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1131680138 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114994342786279906, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1131680137}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1163867135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,50 +4821,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
-      propertyPath: playerOneLine
-      value: 
-      objectReference: {fileID: 1679738725}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerTwoLine
-      value: 
-      objectReference: {fileID: 410531977}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1452836150989282, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
-      propertyPath: m_Name
-      value: Sphere C (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerOneText
-      value: 
-      objectReference: {fileID: 1374018097}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 303248581}
-    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
-        type: 2}
       propertyPath: playerOneRadius
       value: 
       objectReference: {fileID: 1679738725}
@@ -4884,11 +4834,30 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: playerOneText
+      value: 
+      objectReference: {fileID: 1374018097}
+    - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: playerTwoText
+      value: 
+      objectReference: {fileID: 303248581}
+    - target: {fileID: 1452836150989282, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
+      propertyPath: m_Name
+      value: Sphere C (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 114224018319135158, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: customImage
       value: 
       objectReference: {fileID: 285035352}
+    - target: {fileID: 114796348265334168, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bd666b0ca8107342b3d661e86d0f7ae, type: 2}
   m_IsPrefabParent: 0
@@ -5327,6 +5296,11 @@ Prefab:
       propertyPath: customImage
       value: 
       objectReference: {fileID: 285035352}
+    - target: {fileID: 114290549598006922, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -5433,6 +5407,11 @@ Prefab:
       propertyPath: customImage
       value: 
       objectReference: {fileID: 285035352}
+    - target: {fileID: 114627013983765694, guid: 6d12243d032b9e3489b9dea42cef18e3,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d12243d032b9e3489b9dea42cef18e3, type: 2}
   m_IsPrefabParent: 0
@@ -5741,6 +5720,11 @@ Prefab:
       propertyPath: customImage
       value: 
       objectReference: {fileID: 285035352}
+    - target: {fileID: 114290549598006922, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: customImage
+      value: 
+      objectReference: {fileID: 1131680138}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
@@ -5965,65 +5949,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1997728882222594, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
-      propertyPath: m_Name
-      value: Sphere A (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+    - target: {fileID: 114290549598006922, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
-      propertyPath: playerOneLine
+      propertyPath: customImage
       value: 
-      objectReference: {fileID: 1679738725}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerTwoLine
-      value: 
-      objectReference: {fileID: 410531977}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyOneRangeP1
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyOneRangeP2
-      value: 
-      objectReference: {fileID: 1316352958}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: enemyTwoRangeP2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65209986681545568, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerOneText
-      value: 
-      objectReference: {fileID: 1374018097}
-    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
-        type: 2}
-      propertyPath: playerTwoText
-      value: 
-      objectReference: {fileID: 303248581}
+      objectReference: {fileID: 1131680138}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: playerOneRadius
@@ -6039,6 +5969,20 @@ Prefab:
       propertyPath: enemyOneDetection
       value: 
       objectReference: {fileID: 1316352958}
+    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: playerOneText
+      value: 
+      objectReference: {fileID: 1374018097}
+    - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: playerTwoText
+      value: 
+      objectReference: {fileID: 303248581}
+    - target: {fileID: 1997728882222594, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
+      propertyPath: m_Name
+      value: Sphere A (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 114550952324064826, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: customImage
