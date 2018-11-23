@@ -4377,6 +4377,7 @@ MonoBehaviour:
   playerTwoRadius: {fileID: 0}
   enemyOneDetectionP1: {fileID: 1316352958}
   enemyOneDetectionP2: {fileID: 0}
+  enemyTwoDetectionP1: {fileID: 0}
 --- !u!114 &1316352958 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
