@@ -14,7 +14,22 @@ ModelImporter:
     3300000: //RootNode
     4300000: cactus
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 1f03eeced834dfc4ab472fb7c1718b79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves
+    second: {fileID: 2100000, guid: 43963c212d5fb2f40b413c2f17c1aba5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: one
+    second: {fileID: 2100000, guid: 4690d306152f5c64f98c0dbb0157b6b9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

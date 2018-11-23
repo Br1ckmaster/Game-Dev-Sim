@@ -13,7 +13,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: pot_plant2
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 33018daa42e50694ea4cf805c43638a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves
+    second: {fileID: 2100000, guid: 6bd75f2c55e00044e84cf4489e4d6309, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -13,7 +13,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: pPlane14
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: ced42b5e5e93c3a4e9da3eac6a4d5609, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: one
+    second: {fileID: 2100000, guid: aec6e8fa78d21f545a166a9bd9a100a5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
