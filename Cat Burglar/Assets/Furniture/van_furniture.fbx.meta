@@ -17,7 +17,37 @@ ModelImporter:
     3300000: //RootNode
     4300000: cat_van
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinkers
+    second: {fileID: 2100000, guid: ce4ad248e9f2cf04bb92fa08b1c26acd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front_shit
+    second: {fileID: 2100000, guid: f3b032b30cadd8348ac0aed39292911d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: handles
+    second: {fileID: 2100000, guid: 8c001579c69b18248b74adb03e833568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mirrors
+    second: {fileID: 2100000, guid: 2e00298f01f840f459d937a2f5cc5cb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tires
+    second: {fileID: 2100000, guid: b700b9ddd422da04c95543f4e20629ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: van
+    second: {fileID: 2100000, guid: d0d5952b0a8a75341b57cd747c78f77b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
