@@ -211,21 +211,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 4944440475041406, guid: c62a7c1447b292b47a9a365291151328, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1230324388479132, guid: c62a7c1447b292b47a9a365291151328, type: 2}
       propertyPath: m_Name
       value: Sofa_Big (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4944440475041406, guid: c62a7c1447b292b47a9a365291151328, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.1000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4944440475041406, guid: c62a7c1447b292b47a9a365291151328, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.1000003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c62a7c1447b292b47a9a365291151328, type: 2}
@@ -5494,7 +5482,7 @@ Prefab:
       objectReference: {fileID: 1596964245}
     - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1436324205129352, guid: de303db76e9777c40be93191f07031fe, type: 2}
       propertyPath: m_IsActive
@@ -8801,21 +8789,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: 4131968132434472, guid: db2e91f510eface449b84b433ef3ea00, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
-      objectReference: {fileID: 0}
     - target: {fileID: 1719963715351242, guid: db2e91f510eface449b84b433ef3ea00, type: 2}
       propertyPath: m_Name
       value: Sofa_Small (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131968132434472, guid: db2e91f510eface449b84b433ef3ea00, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131968132434472, guid: db2e91f510eface449b84b433ef3ea00, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db2e91f510eface449b84b433ef3ea00, type: 2}
