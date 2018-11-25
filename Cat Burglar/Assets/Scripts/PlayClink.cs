@@ -33,7 +33,6 @@ public class PlayClink : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
                 source.PlayOneShot(clinkSound);
-               // DoorScript.doorKey = true;
                 StartCoroutine(Key());
             }
         }
@@ -41,7 +40,6 @@ public class PlayClink : MonoBehaviour {
 
     IEnumerator Key()
     {
-        yield return new WaitForSeconds(0.5f);
-      //  Destroy(this.gameObject);
+        yield return new WaitForSeconds(0.1f);
     }
 }

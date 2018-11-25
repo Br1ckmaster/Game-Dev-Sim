@@ -140,7 +140,7 @@ public class PickupObject : MonoBehaviour
         {
             playerOneRadius.radius += 1;
             enemyOneDetection.enemyRadiusP1 += 1;
-            enemyTwoDetection.enemyRadiusP1 += 1;
+           // enemyTwoDetection.enemyRadiusP1 += 1;
             p1FirstRadiusChanged = true;
         }
 
@@ -148,7 +148,7 @@ public class PickupObject : MonoBehaviour
         {
             playerOneRadius.radius += 2;
             enemyOneDetection.enemyRadiusP1 += 2.5;
-            enemyTwoDetection.enemyRadiusP1 += 2.5;
+           // enemyTwoDetection.enemyRadiusP1 += 2.5;
             p1SecondRadiusChanged = true;
         }
 
@@ -156,7 +156,7 @@ public class PickupObject : MonoBehaviour
         {
             playerOneRadius.radius += 3;
             enemyOneDetection.enemyRadiusP1 += 2.9;
-            enemyTwoDetection.enemyRadiusP1 += 2.9;
+           // enemyTwoDetection.enemyRadiusP1 += 2.9;
             p1ThirdRadiusChanged = true;
         }
 

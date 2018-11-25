@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyIdle : StateMachineBehaviour {
 
+	Animator anim;
 	GameObject Enemy;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: bf4b2ed49e3f32d489e1eba0a3cc5132
-timeCreated: 1542853451
+timeCreated: 1543139643
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - clinkSound: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
