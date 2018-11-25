@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndGameClipTrigger : MonoBehaviour {
 
-	/*Animator anim;
+	Animator anim;
 	public GameObject playerOne;
 	public GameObject playerTwo;
 
@@ -55,5 +55,5 @@ public class EndGameClipTrigger : MonoBehaviour {
 			playerTwoCollided = false;
 		}
 
-	}*/
+	}
 }
