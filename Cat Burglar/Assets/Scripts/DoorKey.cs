@@ -41,7 +41,7 @@ public class DoorKey : MonoBehaviour {
 
     IEnumerator Key()
     {
-        yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.5f);
         Destroy(this.gameObject);
     }
 
