@@ -771,6 +771,11 @@ Prefab:
       propertyPath: customImage
       value: 
       objectReference: {fileID: 2118533026}
+    - target: {fileID: 82337942257337276, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
@@ -1249,6 +1254,11 @@ Prefab:
       propertyPath: enemyTwo
       value: 
       objectReference: {fileID: 129289250}
+    - target: {fileID: 23705704223397686, guid: d7fa7ed71c46c41498bb34c532097a9b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7fa7ed71c46c41498bb34c532097a9b, type: 2}
   m_IsPrefabParent: 0
@@ -3299,6 +3309,7 @@ GameObject:
   - component: {fileID: 1239299269}
   - component: {fileID: 1239299268}
   - component: {fileID: 1239299267}
+  - component: {fileID: 1239299270}
   m_Layer: 0
   m_Name: Hinge (1)
   m_TagString: Untagged
@@ -3346,6 +3357,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1239299270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239299266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01baa089cffc7c34bb4bc72ef45dbb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customImage: {fileID: 2032258828}
 --- !u!1 &1242867252
 GameObject:
   m_ObjectHideFlags: 0
