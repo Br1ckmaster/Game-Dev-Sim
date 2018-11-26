@@ -4,17 +4,30 @@ using UnityEngine;
 
 public class ExitScript : MonoBehaviour {
 
+	Animator anim;
     public GameObject playerOne;
     public GameObject playerTwo;
 
+	public GameObject enemyOne;
+	public GameObject enemyTwo;
+
     private bool playerOneCollided;
     private bool playerTwoCollided;
+
+	void Awake()
+	{
+		anim = GetComponent<Animator>();
+	}
 
     private void Update()
     {
         if(playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Destroy(playerOne);
+			//Destroy(playerOne);
+			anim.SetTrigger("EndGame");
+			//UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+			Destroy(enemyOne);
+			Destroy(enemyTwo);
         }
 
         else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))

@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ed6e4c4b08b4c29843a6cf8217af83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 0}
+  eventSystem: {fileID: 297722274}
   selectedObject: {fileID: 0}
 --- !u!114 &898222923
 MonoBehaviour:
@@ -353,7 +353,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: dc197d6a9a377e64eb4aa6b3f56eb604, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79dc13310c9394c47be65451f4415f3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

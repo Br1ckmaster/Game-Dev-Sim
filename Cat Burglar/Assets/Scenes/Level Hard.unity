@@ -232,6 +232,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fdeba1624f4a624c94345dd4e5f7e9f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &21326372 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1973179638423500, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1650277874}
 --- !u!1001 &69130386
 Prefab:
   m_ObjectHideFlags: 0
@@ -2267,6 +2272,28 @@ Transform:
   m_PrefabParentObject: {fileID: 4992436285228840, guid: b36d5fa74af3d3c47ba83fd3ac8a1999,
     type: 2}
   m_PrefabInternal: {fileID: 877957612}
+--- !u!1 &925454499 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1125237270517882, guid: d7fa7ed71c46c41498bb34c532097a9b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1133095851}
+--- !u!95 &925454500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925454499}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0deba89a4af94c06b712e502d69c5ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &961482938
 Prefab:
   m_ObjectHideFlags: 0
@@ -3031,7 +3058,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
@@ -3105,6 +3132,16 @@ Prefab:
       propertyPath: m_TagString
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 114710521209589712, guid: d7fa7ed71c46c41498bb34c532097a9b,
+        type: 2}
+      propertyPath: enemyOne
+      value: 
+      objectReference: {fileID: 1582140644}
+    - target: {fileID: 114710521209589712, guid: d7fa7ed71c46c41498bb34c532097a9b,
+        type: 2}
+      propertyPath: enemyTwo
+      value: 
+      objectReference: {fileID: 21326372}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7fa7ed71c46c41498bb34c532097a9b, type: 2}
   m_IsPrefabParent: 0
@@ -5144,6 +5181,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011,
     type: 2}
   m_PrefabInternal: {fileID: 1572230436}
+--- !u!1 &1582140644 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1796388299833706, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056040339}
 --- !u!1001 &1587470083
 Prefab:
   m_ObjectHideFlags: 0
@@ -5692,8 +5734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724923347633b47478192f5064bf8c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOne: {fileID: 0}
-  playerTwo: {fileID: 0}
+  playerOne: {fileID: 767200803}
+  playerTwo: {fileID: 1605502642}
 --- !u!95 &1686291820
 Animator:
   serializedVersion: 3
