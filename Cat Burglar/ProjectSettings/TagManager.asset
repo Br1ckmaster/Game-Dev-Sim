@@ -13,6 +13,7 @@ TagManager:
   - PlayerTwo
   - AudioTriggerChase
   - Exit
+  - Coin
   layers:
   - Default
   - TransparentFX
