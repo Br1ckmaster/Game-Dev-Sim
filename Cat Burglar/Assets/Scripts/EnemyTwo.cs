@@ -53,7 +53,7 @@ public class EnemyTwo : MonoBehaviour
 
             else if (Vector3.Distance(playerOne.position, gameObject.transform.position) > enemyRadiusP1 + enemyTrailDistance)
             {
-                anim.SetBool("IsIdle", false);
+				anim.SetBool("IsIdle", false);
                 anim.SetBool("IsWalking", false);
                 anim.SetBool("IsAttacking", false);
 
@@ -64,7 +64,7 @@ public class EnemyTwo : MonoBehaviour
         }
         else
         {
-            anim.SetBool("IsIdle", false);
+			anim.SetBool("IsIdle", false);
             //anim.SetBool("IsWalking", true);
             anim.SetBool("IsAttacking", false);
 

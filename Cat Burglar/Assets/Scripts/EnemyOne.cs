@@ -65,7 +65,7 @@ public class EnemyOne: MonoBehaviour
         }
         else
         {
-            anim.SetBool("IsIdle", false);
+			anim.SetBool("IsIdle", false);
             //anim.SetBool("IsWalking", true);
             anim.SetBool("IsAttacking", false);
 
