@@ -67,19 +67,31 @@ public class PickupObject : MonoBehaviour
         switch (gameObject.tag)
         {
             case "GroupA":
-                playerOneScore += 1;
+                playerOneScore += 10;
                 playerOneFinal += playerOneScore;
                 playerOneText.text = " " + playerOneFinal.ToString();
                 break;
 
             case "GroupB":
-                playerOneScore += 2;
+                playerOneScore += 100;
                 playerOneFinal += playerOneScore;
                 playerOneText.text = " " + playerOneFinal.ToString();
                 break;
 
             case "GroupC":
-                playerOneScore += 3;
+                playerOneScore += 200;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = " " + playerOneFinal.ToString();
+                break;
+
+            case "GroupD":
+                playerOneScore += 500;
+                playerOneFinal += playerOneScore;
+                playerOneText.text = " " + playerOneFinal.ToString();
+                break;
+
+            case "GroupE":
+                playerOneScore += 1000;
                 playerOneFinal += playerOneScore;
                 playerOneText.text = " " + playerOneFinal.ToString();
                 break;
@@ -89,7 +101,7 @@ public class PickupObject : MonoBehaviour
 
     void OnDestroy()
     {
-        if (playerOneFinal >= 3 && !p1FirstRadiusChanged)
+        if (playerOneFinal >= 250 && !p1FirstRadiusChanged)
         {
             playerOneRadius.radius += 1;
             enemyOneDetection.enemyRadiusP1 += 1;
@@ -97,7 +109,7 @@ public class PickupObject : MonoBehaviour
             p1FirstRadiusChanged = true;
         }
 
-        else if (playerOneFinal >= 7 && !p1SecondRadiusChanged)
+        else if (playerOneFinal >= 500 && !p1SecondRadiusChanged)
         {
             playerOneRadius.radius += 2;
             enemyOneDetection.enemyRadiusP1 += 2.5;
@@ -105,7 +117,7 @@ public class PickupObject : MonoBehaviour
             p1SecondRadiusChanged = true;
         }
 
-        else if (playerOneFinal >= 10 && !p1ThirdRadiusChanged)
+        else if (playerOneFinal >= 1250 && !p1ThirdRadiusChanged)
         {
             playerOneRadius.radius += 3;
             enemyOneDetection.enemyRadiusP1 += 2.9;

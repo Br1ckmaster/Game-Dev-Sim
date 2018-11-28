@@ -9,7 +9,7 @@ public class EnemyReset : MonoBehaviour
 
 	public void Update()
     {
-		
+
 	}
 
     public void OnTriggerEnter(Collider other)
