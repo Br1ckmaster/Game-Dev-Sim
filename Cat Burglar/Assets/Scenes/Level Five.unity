@@ -17126,6 +17126,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 767200803}
     - target: {fileID: 114071346737258470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
       propertyPath: m_Camera
@@ -17136,11 +17141,6 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1995425452}
-    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 767200803}
     - target: {fileID: 114629727280780470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
       propertyPath: playerOne
@@ -22086,7 +22086,7 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1995425452}
-    - target: {fileID: 114128342473296586, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+    - target: {fileID: 114599651310145966, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
         type: 2}
       propertyPath: player
       value: 
