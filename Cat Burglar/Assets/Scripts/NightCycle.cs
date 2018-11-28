@@ -14,10 +14,8 @@ public class NightCycle : MonoBehaviour
     [Range(0, 1)] private float currentTimeOfDay = 0; //slider in inspector
 
     public PlayerLine playerOneRadius;
-    public PlayerLine playerTwoRadius;
 
     public EnemyOne enemyOneDetectionP1;
-    public EnemyOne enemyOneDetectionP2;
 
     public EnemyTwo enemyTwoDetectionP1;
 

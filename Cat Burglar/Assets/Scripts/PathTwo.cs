@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class PathTwo : MonoBehaviour 
 {
-    //static Animator anim;
+    static Animator anim;
 
     private NavMeshAgent nav;
     private EnemyTwo enemy;
@@ -16,7 +16,7 @@ public class PathTwo : MonoBehaviour
     }
     void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         enemy = GetComponent<EnemyTwo>();
     }
 
@@ -27,5 +27,8 @@ public class PathTwo : MonoBehaviour
             return;
         }
         nav.SetDestination(enemy.originalPos);
+        anim.SetBool("IsIdle", false);
+        anim.SetBool("IsWalking", true);
+        anim.SetBool("IsAttacking", false);
     }
 }

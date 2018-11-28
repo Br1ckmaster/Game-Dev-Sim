@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraFacingBillboard : MonoBehaviour
 {
-    public Camera m_Camera;
+    public Camera mainCamera;
 
     //Orient the camera after all movement is completed this frame to avoid jittering
     void LateUpdate()
     {
-        transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
-            m_Camera.transform.rotation * Vector3.up);
+        transform.LookAt(transform.position + mainCamera.transform.rotation.x * Vector3.forward,
+            mainCamera.transform.rotation * Vector3.up);
     }
 }

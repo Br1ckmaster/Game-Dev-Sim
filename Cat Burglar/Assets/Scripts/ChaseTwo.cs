@@ -28,12 +28,13 @@ public class ChaseTwo : MonoBehaviour {
             return;
         }
         nav.SetDestination(enemy.playerOne.position);
+        anim.SetBool("IsIdle", false);
+        anim.SetBool("IsWalking", true);
+        anim.SetBool("IsAttacking", false);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        //anim.SetBool("IsWalking", false);
-        //anim.SetBool("IsAttacking", true);
         switch (collision.gameObject.tag)
         {
             case "Player": Destroy(player); break;
