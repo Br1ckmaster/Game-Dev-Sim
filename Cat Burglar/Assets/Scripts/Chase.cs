@@ -29,6 +29,7 @@ public class Chase : MonoBehaviour
             return;
         }
             nav.SetDestination(enemy.playerOne.position);        
+
     }
 
     private void OnCollisionEnter(Collision collision)

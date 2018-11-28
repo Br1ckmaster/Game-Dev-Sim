@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7e3efae9c9deb41a606829ce3c10eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!114 &114309292791666794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -631,8 +631,12 @@ MonoBehaviour:
   enemyRadiusP1: 2
   enemyRadiusP2: 2
   enemyTrailDistance: 3
+  idle: 0
   anim: {fileID: 95954797619231034}
   originalPos: {x: 0, y: 0, z: 0}
+  currentPos: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  currentRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &114865325569101890
 MonoBehaviour:
   m_ObjectHideFlags: 1

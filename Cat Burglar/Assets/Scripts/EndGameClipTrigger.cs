@@ -6,7 +6,7 @@ public class EndGameClipTrigger : MonoBehaviour {
 
 	Animator anim;
 	public GameObject playerOne;
-	public GameObject playerTwo;
+	//public GameObject playerTwo;
 
 	private bool playerOneCollided;
 	private bool playerTwoCollided;
@@ -19,7 +19,7 @@ public class EndGameClipTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
+		if(playerOneCollided && Input.GetKeyDown(KeyCode.Space))
 		{
 			anim.SetTrigger("EndGame");
 		}
