@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -925,12 +925,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4789911003170424, guid: 9639f1421d4999e478235806126d9538,
     type: 2}
   m_PrefabInternal: {fileID: 1344069714}
---- !u!114 &410531977 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114239460435288446, guid: 3b26f4b9528e56c44b7c522a8a40f4e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 580492221}
-  m_Script: {fileID: 11500000, guid: 72516fbb1c0952d4b8d3038be26611f3, type: 3}
 --- !u!4 &433243961 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4453750191914456, guid: a3245b7dc45eded469131dd0f5cb16a6,
@@ -989,7 +983,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyOneDetection
@@ -1158,48 +1152,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4944440475041406, guid: c62a7c1447b292b47a9a365291151328,
     type: 2}
   m_PrefabInternal: {fileID: 1265042751}
---- !u!1001 &580492221
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.9137355e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4206687627733642, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3b26f4b9528e56c44b7c522a8a40f4e8, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &581971248
 Prefab:
   m_ObjectHideFlags: 0
@@ -1676,7 +1628,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyOneDetection
@@ -1991,7 +1943,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneDetection
@@ -2972,7 +2924,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
@@ -3020,7 +2972,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4284311315769844, guid: d7fa7ed71c46c41498bb34c532097a9b, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114710521209589712, guid: d7fa7ed71c46c41498bb34c532097a9b,
         type: 2}
@@ -3031,7 +2983,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwo
       value: 
-      objectReference: {fileID: 1605502642}
+      objectReference: {fileID: 0}
     - target: {fileID: 114629648778322808, guid: d7fa7ed71c46c41498bb34c532097a9b,
         type: 2}
       propertyPath: customImage
@@ -4182,7 +4134,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneDetection
@@ -4354,7 +4306,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneDetection
@@ -4970,7 +4922,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341808633045928, guid: 8bd666b0ca8107342b3d661e86d0f7ae,
         type: 2}
       propertyPath: enemyOneDetection
@@ -5450,11 +5402,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4367170631300368, guid: 689eca1737d2f754d89f011b4290c011,
     type: 2}
   m_PrefabInternal: {fileID: 1601487192}
---- !u!1 &1605502642 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1708351180788106, guid: 3b26f4b9528e56c44b7c522a8a40f4e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 580492221}
 --- !u!1001 &1610761196
 Prefab:
   m_ObjectHideFlags: 0
@@ -5576,7 +5523,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneDetection
@@ -5727,7 +5674,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913377794285704, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
@@ -5852,7 +5799,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4826728098527346, guid: f5679914fb6e34ccb98a3c3043dd4153, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5679914fb6e34ccb98a3c3043dd4153, type: 2}
@@ -5958,7 +5905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOne: {fileID: 767200803}
-  playerTwo: {fileID: 1605502642}
+  playerTwo: {fileID: 0}
 --- !u!95 &1686291820
 Animator:
   serializedVersion: 3
@@ -6092,7 +6039,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoLine
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyOneRangeP1
@@ -6132,7 +6079,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114420364616875076, guid: 6d12243d032b9e3489b9dea42cef18e3,
         type: 2}
       propertyPath: enemyOneDetection
@@ -6458,7 +6405,7 @@ Prefab:
         type: 2}
       propertyPath: playerTwoRadius
       value: 
-      objectReference: {fileID: 410531977}
+      objectReference: {fileID: 0}
     - target: {fileID: 114888449383654658, guid: 1fdeba1624f4a624c94345dd4e5f7e9f,
         type: 2}
       propertyPath: enemyOneDetection
@@ -7330,7 +7277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 88491c268964f9b41a22e03285eed8bf, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88491c268964f9b41a22e03285eed8bf, type: 3}
@@ -7403,7 +7350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4736548946881574, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114128342473296586, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
         type: 2}
