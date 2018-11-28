@@ -5,11 +5,9 @@ using UnityEngine;
 public class EnemyTwo : MonoBehaviour
 {
     public Transform playerOne;
-    //public Transform playerTwo;
     public double enemyRadiusP1 = 2;
     public double enemyRadiusP2 = 2;
     public double enemyTrailDistance = 3;
-    //public float enemySpeed;
 
     public Animator anim;
 
