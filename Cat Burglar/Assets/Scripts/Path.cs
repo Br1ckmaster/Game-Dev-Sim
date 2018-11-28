@@ -30,5 +30,6 @@ public class Path : MonoBehaviour
         anim.SetBool("IsIdle", false);
         anim.SetBool("IsWalking", true);
         anim.SetBool("IsAttacking", false);
+
     }
 }
