@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.57482487, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1057,9 +1057,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 1677286935}
+    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 998466341}
+    m_RemovedComponents:
+    - {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &390131903
@@ -4255,6 +4266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOneRadius: {fileID: 1974299005}
   enemyOneDetection: {fileID: 1870906324}
+  enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 1236037782}
 --- !u!1 &1657306359
 GameObject:
