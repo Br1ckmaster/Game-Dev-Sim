@@ -6531,7 +6531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114129886189078778, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
         type: 2}
-      propertyPath: m_Camera
+      propertyPath: mainCamera
       value: 
       objectReference: {fileID: 119019153}
     - target: {fileID: 223397093975612050, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
@@ -10790,7 +10790,7 @@ Prefab:
       objectReference: {fileID: 427574891}
     - target: {fileID: 114071346737258470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
-      propertyPath: m_Camera
+      propertyPath: mainCamera
       value: 
       objectReference: {fileID: 119019153}
     - target: {fileID: 223926663986600396, guid: cbf9ecce1a674674d99ae68e2a45adb1,
@@ -15609,9 +15609,7 @@ MonoBehaviour:
   secondsInFullDay: 425
   currentTimeOfDay: 0
   playerOneRadius: {fileID: 319785339}
-  playerTwoRadius: {fileID: 0}
   enemyOneDetectionP1: {fileID: 906023985}
-  enemyOneDetectionP2: {fileID: 0}
   enemyTwoDetectionP1: {fileID: 701122040}
 --- !u!4 &946196794
 Transform:
@@ -22341,10 +22339,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 427574891}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0

@@ -8504,7 +8504,7 @@ Animator:
   m_GameObject: {fileID: 925454499}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0deba89a4af94c06b712e502d69c5ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9614871647604cc48ac46911c3f8aa6e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11200,18 +11200,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1436324205129352, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1802399742888884, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 767200803}
+    - target: {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 767200803}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
@@ -12678,9 +12676,7 @@ MonoBehaviour:
   secondsInFullDay: 425
   currentTimeOfDay: 0
   playerOneRadius: {fileID: 1679738725}
-  playerTwoRadius: {fileID: 0}
   enemyOneDetectionP1: {fileID: 1316352958}
-  enemyOneDetectionP2: {fileID: 0}
   enemyTwoDetectionP1: {fileID: 1650277875}
 --- !u!1001 &1284597812
 Prefab:
@@ -17133,7 +17129,7 @@ Prefab:
       objectReference: {fileID: 767200803}
     - target: {fileID: 114071346737258470, guid: cbf9ecce1a674674d99ae68e2a45adb1,
         type: 2}
-      propertyPath: m_Camera
+      propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1995425452}
     - target: {fileID: 223926663986600396, guid: cbf9ecce1a674674d99ae68e2a45adb1,
@@ -17837,41 +17833,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1ae21dc939498c46ae99e2a9ad7a3c2, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1686291817 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 1131680137}
---- !u!114 &1686291819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1686291817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724923347633b47478192f5064bf8c04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerOne: {fileID: 767200803}
-  playerTwo: {fileID: 0}
---- !u!95 &1686291820
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1686291817}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0deba89a4af94c06b712e502d69c5ce, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1688914032
 Prefab:
   m_ObjectHideFlags: 0
@@ -22078,7 +22039,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114129886189078778, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
         type: 2}
-      propertyPath: m_Camera
+      propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1995425452}
     - target: {fileID: 223397093975612050, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,

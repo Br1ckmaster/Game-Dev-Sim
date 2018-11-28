@@ -74,6 +74,9 @@ GameObject:
   - component: {fileID: 223386199846133494}
   - component: {fileID: 114882306944968792}
   - component: {fileID: 114722312180474878}
+  - component: {fileID: 114272436537970038}
+  - component: {fileID: 95051070779755984}
+  - component: {fileID: 114841776962333360}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -390,6 +393,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95051070779755984
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138580725930188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9614871647604cc48ac46911c3f8aa6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114032002479941692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -583,6 +603,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114272436537970038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138580725930188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724923347633b47478192f5064bf8c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOne: {fileID: 0}
 --- !u!114 &114285578459805502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -903,7 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.003921569}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -972,6 +1004,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3970752934a900a499e1a214f629d90d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114841776962333360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138580725930188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724923347633b47478192f5064bf8c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOne: {fileID: 0}
 --- !u!114 &114882306944968792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1511,10 +1555,10 @@ RectTransform:
   m_Father: {fileID: 224721329928452330}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 884, y: 455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224721329928452330
 RectTransform:
