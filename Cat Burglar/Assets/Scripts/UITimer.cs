@@ -10,17 +10,10 @@ public class UITimer : MonoBehaviour
     public float timeAmt = 120;
     private float time;
 
-    //public NightCycle nightCycle;
 
-    //private float x = 0;
-    //private float y = 0;
-    //private float z = 90;
-	//public Text timeText;
 
 	void Start () 
 	{
-        //RectTransform rectTransform = GetComponent<RectTransform>();
-        //rectTransform.Rotate(new Vector3(x, y, z));
         fillImg = this.GetComponent<Image> ();
 		time = timeAmt;
 	}
@@ -32,8 +25,6 @@ public class UITimer : MonoBehaviour
 		{
 			time -= Time.deltaTime;
 			fillImg.fillAmount = time / timeAmt;
-            
-           // timeText.text = "Time : " + time.ToString ("F");
         }
 	}
 
