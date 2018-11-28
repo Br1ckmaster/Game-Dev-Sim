@@ -31,7 +31,7 @@ public class PlayClink : MonoBehaviour {
     {
         if (inTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.LeftControl))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 source.PlayOneShot(clinkSound);
                 StartCoroutine(Key());
