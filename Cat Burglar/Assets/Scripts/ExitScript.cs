@@ -21,7 +21,7 @@ public class ExitScript : MonoBehaviour {
 
     private void Update()
     {
-        if(playerOneCollided && Input.GetKeyDown(KeyCode.LeftControl))
+        if(playerOneCollided && Input.GetKeyDown(KeyCode.Space))
         {
 			//Destroy(playerOne);
 			anim.SetTrigger("EndGame");
