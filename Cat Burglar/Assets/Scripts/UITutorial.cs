@@ -24,4 +24,12 @@ public class UITutorial : MonoBehaviour
 			image.enabled = false;
 		}
 	}
+
+	private void OnDestroy()
+	{
+		if (image != null)
+		{
+			image.enabled = false;
+		}
+	}
 }

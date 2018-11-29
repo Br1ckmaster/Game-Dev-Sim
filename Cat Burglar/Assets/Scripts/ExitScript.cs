@@ -54,4 +54,13 @@ public class ExitScript : MonoBehaviour {
         Destroy(enemyTwo);
         Destroy(playerOne);
     }
+
+	private void OnDestroy()
+	{
+		if (endBackground && wonBackground != null)
+		{
+			endBackground.enabled = false;
+			wonBackground.enabled = false;
+		}
+	}
 }
