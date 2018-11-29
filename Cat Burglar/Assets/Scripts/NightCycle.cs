@@ -1,33 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class NightCycle : MonoBehaviour
 {
     [SerializeField]
     private Light sun;
-    [SerializeField]
     private float secondsInFullDay = 120f; //how many seconds in a day
 
    
-    [SerializeField]
     [Range(0, 1)] private float currentTimeOfDay = 0; //slider in inspector
 
     public PlayerLine playerOneRadius;
-
     public EnemyOne enemyOneDetectionP1;
-
     public EnemyTwo enemyTwoDetectionP1;
+
+    public AudioClip rooster;
+    private AudioSource source;
 
     private float timeMultiplier = 1f;
     private float sunInitialIntensity;
 
-    void Start()
+    private void Start()
     {
         sunInitialIntensity = sun.intensity; //sun is equal to the directional light intensity
+        source = GetComponent<AudioSource>();
     }
 
-    void Update()
+    private void Update()
     {
         UpdateSun();
         currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier; //current time of day over time every frame divide by the seconds in a day then times it by the time multiplier
@@ -38,10 +39,11 @@ public class NightCycle : MonoBehaviour
             playerOneRadius.radius = 20;
             enemyOneDetectionP1.enemyRadiusP1 = 22;
             enemyTwoDetectionP1.enemyRadiusP1 = 22;
+            source.PlayOneShot(rooster);
         }
     }
 
-    void UpdateSun()
+    private void UpdateSun()
     {
         sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 75, 260, 0); //transform rotation of sun //170 is horizon
 
