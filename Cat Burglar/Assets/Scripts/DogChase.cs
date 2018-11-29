@@ -23,7 +23,7 @@ public class DogChase : MonoBehaviour {
 				Vector3 direction = playerOne.position - this.transform.position;
 				direction.y = 0; //calculate distance to player
 
-				//this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f); //rotation speed
+				this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f); //rotation speed
 
 				anim.SetBool ("IsSleeping", false);
 				if (direction.magnitude > 3) //follow distance behind player
