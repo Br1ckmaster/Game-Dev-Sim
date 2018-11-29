@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114926773691778528}
   m_Layer: 0
   m_Name: Ring
-  m_TagString: GroupE
+  m_TagString: GroupD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1c7f565d347fc8b4dbe4f2942d3ea815, type: 3}
+  - {fileID: 2100000, guid: c608637f7fba26f4bbe0bb449344f554, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,7 +110,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -216,5 +216,5 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4278219007
+    rgba: 4294901992
   m_Size: 0.5
