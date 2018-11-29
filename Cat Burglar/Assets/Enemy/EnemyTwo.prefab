@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 114311381403713662}
   - component: {fileID: 114526701054954444}
   - component: {fileID: 114331799499130282}
+  - component: {fileID: 114402230141086636}
   m_Layer: 0
   m_Name: EnemyTwo
   m_TagString: Enemy
@@ -443,8 +444,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1973179638423500}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 13.157, y: 0, z: -4.49}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.76, y: 3.7969317e-17, z: -0.574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4925949731019022}
@@ -617,6 +618,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114402230141086636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973179638423500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b9af157ed7de64e8324fd334794ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collided: 0
 --- !u!114 &114526701054954444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -648,6 +661,7 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   currentRot: {x: 0, y: 0, z: 0, w: 0}
+  image: {fileID: 114029506466889236}
 --- !u!114 &114865325569101890
 MonoBehaviour:
   m_ObjectHideFlags: 1

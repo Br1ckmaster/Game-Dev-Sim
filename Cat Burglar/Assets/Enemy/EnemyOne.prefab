@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 114397640791652750}
   - component: {fileID: 114599651310145966}
   - component: {fileID: 114854376381676570}
+  - component: {fileID: 114395158656832314}
   m_Layer: 0
   m_Name: EnemyOne
   m_TagString: Enemy
@@ -441,7 +442,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796388299833706}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -3.19, y: 0, z: -7.74}
+  m_LocalPosition: {x: 0.13999954, y: -1.1903592e-19, z: 5.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274652099110954}
@@ -555,6 +556,19 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   currentRot: {x: 0, y: 0, z: 0, w: 0}
+  image: {fileID: 114721896552028946}
+--- !u!114 &114395158656832314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796388299833706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b9af157ed7de64e8324fd334794ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collided: 0
 --- !u!114 &114397640791652750
 MonoBehaviour:
   m_ObjectHideFlags: 1
