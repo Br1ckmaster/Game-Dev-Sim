@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114560970043658720}
   m_Layer: 0
   m_Name: Game Console
-  m_TagString: GroupB
+  m_TagString: GroupC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1607123404452818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.990993, y: 0.07255685, z: -1.593843}
+  m_LocalPosition: {x: -4.610183, y: 0.06329098, z: 0.079003386}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,9 +108,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   enemyOneDetection: {fileID: 0}
   enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 0}
-  pickupSound: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  pickupSound: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
 --- !u!122 &122219472721518674
 Halo:
   m_ObjectHideFlags: 1
@@ -216,5 +216,5 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4294962432
+    rgba: 4281793280
   m_Size: 0.5

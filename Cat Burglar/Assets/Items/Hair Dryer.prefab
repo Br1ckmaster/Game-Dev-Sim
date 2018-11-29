@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827210659522718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.313738, y: 0.07255688, z: -2.4703622}
+  m_LocalPosition: {x: -4.4665976, y: 0.08593814, z: -2.0102947}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827210659522718}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -108,9 +108,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   enemyOneDetection: {fileID: 0}
   enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 0}
-  pickupSound: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  pickupSound: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
 --- !u!122 &122678346233158698
 Halo:
   m_ObjectHideFlags: 1

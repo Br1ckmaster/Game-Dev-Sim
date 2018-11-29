@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052256785550558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.139525, y: 1, z: -0.07}
+  m_LocalPosition: {x: -3.797409, y: 0.2497348, z: 3.9642348}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,9 +110,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   enemyOneDetection: {fileID: 0}
   enemyTwoDetection: {fileID: 0}
   playerOneText: {fileID: 0}
-  pickupSound: {fileID: 8300000, guid: 40f1c56be6de87c4d85dfbb853dbbac4, type: 3}
+  pickupSound: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
 --- !u!114 &114569539989464184
 MonoBehaviour:
   m_ObjectHideFlags: 1
