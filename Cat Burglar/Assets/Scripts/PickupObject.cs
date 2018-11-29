@@ -25,7 +25,7 @@ public class PickupObject : MonoBehaviour
     private int playerOneFinal = 0;
 
     public AudioClip pickupSound;
-    //private AudioSource source;
+    private AudioSource source;
 
     public void Awake()
     {
@@ -34,15 +34,16 @@ public class PickupObject : MonoBehaviour
         p1FirstRadiusChanged = false;
         p1SecondRadiusChanged = false;
         p1ThirdRadiusChanged = false;
-        //source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
 
     }
 
     private void Update()
     {
-        if (playerOneCollided && Input.GetButton("P1_Pickup"))
+        if (playerOneCollided && Input.GetButtonDown("P1_Pickup"))
         {
-           StartCoroutine(PlayerOnePickup());
+            source.PlayOneShot(pickupSound);
+            StartCoroutine(PlayerOnePickup());
         }
 
     }

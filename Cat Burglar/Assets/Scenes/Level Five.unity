@@ -9754,7 +9754,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1602447361773612, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4326483152372230, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22193,6 +22193,23 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 1290871569}
+    - target: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: BGM
+      value: 
+      objectReference: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5,
+        type: 2}
+    - target: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: ChaseMusic
+      value: 
+      objectReference: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5,
+        type: 2}
+    - target: {fileID: 114547065911757194, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0

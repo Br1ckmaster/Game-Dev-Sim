@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 114144691843486816}
   - component: {fileID: 195615881331256402}
   - component: {fileID: 136860428988044470}
-  - component: {fileID: 114547065911757194}
   - component: {fileID: 54518804972893348}
   - component: {fileID: 114397640791652750}
   - component: {fileID: 114599651310145966}
@@ -441,8 +440,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796388299833706}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.13999954, y: -1.1903592e-19, z: 5.21}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.82, y: 2.3412719e-17, z: -1.236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274652099110954}
@@ -504,7 +503,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
@@ -552,6 +551,9 @@ MonoBehaviour:
   enemyTrailDistance: 3
   idling: 0
   anim: {fileID: 95681048739662714}
+  BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
+  ChaseMusic: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5,
+    type: 2}
   originalPos: {x: 0, y: 0, z: 0}
   currentPos: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
@@ -596,20 +598,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114547065911757194
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796388299833706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4179be958c8ebd4caf200df548c50df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
-  BPM: 120
 --- !u!114 &114599651310145966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -710,7 +698,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0cd609d4377f5224eb603e26be39f9d6, type: 2}
+  - {fileID: 2100000, guid: 1ab3bbad5d27f264e9362f0ba54289df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

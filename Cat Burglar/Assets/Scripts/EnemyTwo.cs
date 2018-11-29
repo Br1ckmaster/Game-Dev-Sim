@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class EnemyTwo : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class EnemyTwo : MonoBehaviour
     public bool idling;
 
     public Animator anim;
+    public AudioMixerSnapshot BGM;
+    public AudioMixerSnapshot ChaseMusic;
 
     [HideInInspector]
     public Vector3 originalPos;
@@ -29,6 +32,9 @@ public class EnemyTwo : MonoBehaviour
     private ChaseTwo chase;
     private PathTwo path;
     private EnemyReset reset;
+
+    private float transitionIn;
+    private float transitionOut;
 
     private void Awake()
     {
@@ -102,6 +108,7 @@ public class EnemyTwo : MonoBehaviour
     {
         //chase.enabled = true;
         //path.enabled = false;
+        ChaseMusic.TransitionTo(transitionIn);
         chase.PlayerChaseTwo();
     }
 
@@ -109,6 +116,7 @@ public class EnemyTwo : MonoBehaviour
     {
         //path.enabled = true;
         //chase.enabled = false;
+        BGM.TransitionTo(transitionOut);
         path.PathBackTwo();
         idling = false;
     }
