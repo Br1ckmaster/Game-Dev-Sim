@@ -7,7 +7,7 @@ public class NightCycle : MonoBehaviour
 {
     [SerializeField]
     private Light sun;
-    private float secondsInFullDay = 120f; //how many seconds in a day
+    private float secondsInFullDay = 425f; //how many seconds in a day
 
    
     [Range(0, 1)] private float currentTimeOfDay = 0; //slider in inspector
