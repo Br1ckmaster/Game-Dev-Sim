@@ -832,8 +832,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884699634495036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.201, y: -2.0641544e-17, z: 5.8}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 7.1, y: -2.0641544e-17, z: 1.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4886880958607586}
@@ -841,7 +841,7 @@ Transform:
   - {fileID: 4130809392054976}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!4 &4394929395865460
 Transform:
   m_ObjectHideFlags: 1
@@ -1328,7 +1328,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1370,6 +1370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOne: {fileID: 0}
+  dogRadiusP1: 2
+  anim: {fileID: 0}
+  enemyOneDetection: {fileID: 0}
+  enemyTwoDetection: {fileID: 0}
+  playerOneRadius: {fileID: 0}
 --- !u!137 &137929444468815108
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

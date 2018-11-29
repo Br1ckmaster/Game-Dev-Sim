@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052256785550558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.797409, y: 0.2497348, z: 3.9642348}
+  m_LocalPosition: {x: -1.182208, y: 1.261, z: -4.257}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -168,7 +168,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -195,6 +195,7 @@ MonoBehaviour:
   playerOneRadius: {fileID: 0}
   enemyOneDetection: {fileID: 0}
   enemyTwoDetection: {fileID: 0}
+  dogDetection: {fileID: 0}
   playerOneText: {fileID: 0}
   pickupSound: {fileID: 8300000, guid: a8d8c3f58be6d6e4a96b44e950f78268, type: 3}
 --- !u!114 &114569539989464184
@@ -219,4 +220,4 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4294967288
-  m_Size: 0.5
+  m_Size: 0.3
