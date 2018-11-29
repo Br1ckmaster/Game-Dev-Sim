@@ -347,6 +347,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1ae21dc939498c46ae99e2a9ad7a3c2, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &23733683 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114722166017090174, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1131680137}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &24745574
 GameObject:
   m_ObjectHideFlags: 0
@@ -11251,20 +11257,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: playerOne
-      value: 
-      objectReference: {fileID: 767200803}
     - target: {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe,
         type: 2}
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 767200803}
-    - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: playerOne
+      value: 
+      objectReference: {fileID: 767200803}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
@@ -11352,6 +11354,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114710521209589712, guid: d7fa7ed71c46c41498bb34c532097a9b,
+        type: 2}
+      propertyPath: endBackground
+      value: 
+      objectReference: {fileID: 1772837459}
+    - target: {fileID: 114710521209589712, guid: d7fa7ed71c46c41498bb34c532097a9b,
+        type: 2}
+      propertyPath: wonBackground
+      value: 
+      objectReference: {fileID: 23733683}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7fa7ed71c46c41498bb34c532097a9b, type: 2}
   m_IsPrefabParent: 0
@@ -17238,20 +17250,6 @@ Prefab:
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 1679738730}
-    - target: {fileID: 195487916081952616, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-        type: 2}
-      propertyPath: m_AutoBraking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54246131207919258, guid: cbf9ecce1a674674d99ae68e2a45adb1,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973179638423500, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
@@ -19013,6 +19011,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1ae21dc939498c46ae99e2a9ad7a3c2, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1772837459 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114500090014779880, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1131680137}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1779206371
 Prefab:
   m_ObjectHideFlags: 0
@@ -22162,28 +22166,6 @@ Prefab:
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 1679738730}
-    - target: {fileID: 195615881331256402, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
-        type: 2}
-      propertyPath: m_AutoBraking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54518804972893348, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
-        type: 2}
-      propertyPath: BGM
-      value: 
-      objectReference: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5,
-        type: 2}
-    - target: {fileID: 114144691843486816, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
-        type: 2}
-      propertyPath: ChaseMusic
-      value: 
-      objectReference: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0

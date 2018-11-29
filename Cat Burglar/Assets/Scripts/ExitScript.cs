@@ -1,36 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExitScript : MonoBehaviour {
 
-	Animator anim;
     public GameObject playerOne;
-
 	public GameObject enemyOne;
 	public GameObject enemyTwo;
 
+    public Image endBackground;
+    public Image wonBackground;
+
     private bool playerOneCollided;
 
-	void Awake()
+	private void Awake()
 	{
-		anim = GetComponent<Animator>();
+        endBackground.enabled = false;
+        wonBackground.enabled = false;
 	}
 
     private void Update()
     {
-        if(playerOneCollided && Input.GetKeyDown(KeyCode.Space))
+        if(playerOneCollided && Input.GetButtonDown("P1_Pickup"))
         {
-			//Destroy(playerOne);
-			anim.SetTrigger("EndGame");
-			//UnityEngine.SceneManagement.SceneManager.LoadScene(6);
-			Destroy(enemyOne);
-			Destroy(enemyTwo);
+            EndGame();
         }
 
     }
 
-    void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter(Collider collider)
     {
 		if(collider.gameObject.name == "PlayerOne")
         {
@@ -38,11 +37,21 @@ public class ExitScript : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit(Collider collider)
+    private void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.name == "PlayerOne")
         {
             playerOneCollided = false;
         }
+    }
+
+    private void EndGame()
+    {
+        endBackground.enabled = true;
+        wonBackground.enabled = true;
+
+        Destroy(enemyOne);
+        Destroy(enemyTwo);
+        Destroy(playerOne);
     }
 }
