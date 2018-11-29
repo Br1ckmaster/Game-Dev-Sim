@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine.Audio;
 
 public class Chase : MonoBehaviour
@@ -11,6 +12,8 @@ public class Chase : MonoBehaviour
 
     private NavMeshAgent nav;
     private EnemyOne enemy;
+
+	//[SerializeField] private Image image;
 
     void Awake()
     {
@@ -40,7 +43,8 @@ public class Chase : MonoBehaviour
     {
         switch (collision.gameObject.name)
         {
-            case "PlayerOne": Destroy(player); break;
-        }
+           	case "PlayerOne": Destroy(player); break;
+			//image.enabled = true;
+		}
     }
 }
