@@ -11,6 +11,7 @@ public class PickupObject : MonoBehaviour
 
     public EnemyOne enemyOneDetection;
     public EnemyTwo enemyTwoDetection;
+    public DogChase dogDetection;
 
     public Text playerOneText;
 
@@ -112,6 +113,7 @@ public class PickupObject : MonoBehaviour
             playerOneRadius.radius += 1;
             enemyOneDetection.enemyRadiusP1 += 1;
             enemyTwoDetection.enemyRadiusP1 += 1;
+            dogDetection.dogRadiusP1 += 1;
             p1FirstRadiusChanged = true;
         }
 
@@ -120,6 +122,7 @@ public class PickupObject : MonoBehaviour
             playerOneRadius.radius += 2;
             enemyOneDetection.enemyRadiusP1 += 2.5;
             enemyTwoDetection.enemyRadiusP1 += 2.5;
+            dogDetection.dogRadiusP1 += 2.5;
             p1SecondRadiusChanged = true;
         }
 
@@ -128,6 +131,7 @@ public class PickupObject : MonoBehaviour
             playerOneRadius.radius += 3;
             enemyOneDetection.enemyRadiusP1 += 2.9;
             enemyTwoDetection.enemyRadiusP1 += 2.9;
+            dogDetection.dogRadiusP1 += 2.9;
             p1ThirdRadiusChanged = true;
         }  
     }

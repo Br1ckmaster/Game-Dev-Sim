@@ -15,12 +15,12 @@ public class Chase : MonoBehaviour
 
 	//[SerializeField] private Image image;
 
-    void Awake()
+    private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
     }
 
-    void Start()
+    private void Start()
     {
         anim = GetComponent<Animator>();
         enemy = GetComponent<EnemyOne>();
