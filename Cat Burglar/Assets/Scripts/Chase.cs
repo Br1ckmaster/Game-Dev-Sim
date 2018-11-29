@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Audio;
 
 public class Chase : MonoBehaviour
 {  
@@ -32,6 +33,7 @@ public class Chase : MonoBehaviour
         anim.SetBool("IsIdle", false);
         anim.SetBool("IsWalking", true);
         anim.SetBool("IsAttacking", false);
+
     }
 
     private void OnCollisionEnter(Collision collision)
