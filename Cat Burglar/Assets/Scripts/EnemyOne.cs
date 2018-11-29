@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyOne: MonoBehaviour
 {
@@ -22,6 +22,9 @@ public class EnemyOne: MonoBehaviour
     public Quaternion originalRot;
     [HideInInspector]
     public Quaternion currentRot;
+
+    [SerializeField]
+    private Image image;
 
     private Chase chase;
     private Path path;
@@ -49,6 +52,7 @@ public class EnemyOne: MonoBehaviour
         //chase.enabled = false;
         //path.enabled = false;
         reset.collided = true;
+        image.enabled = false;
     }
 
     public void Update()
@@ -63,18 +67,20 @@ public class EnemyOne: MonoBehaviour
             if (reset.collided == true && idling == false)
             {
                 Idle();
+                image.enabled = false;
             }
             else if (Vector3.Distance(playerOne.position, 
                         gameObject.transform.position) < enemyRadiusP1 && idling)
             {
                 Chase();
                 reset.collided = false;
-
+                image.enabled = true;
             }
             else if (Vector3.Distance(playerOne.position, gameObject.transform.position)
                                         > enemyRadiusP1 + enemyTrailDistance)
             {
                 PathBack();
+                image.enabled = false;
             }
         }
     }

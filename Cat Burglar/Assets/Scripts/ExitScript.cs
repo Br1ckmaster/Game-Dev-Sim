@@ -6,13 +6,11 @@ public class ExitScript : MonoBehaviour {
 
 	Animator anim;
     public GameObject playerOne;
-    public GameObject playerTwo;
 
 	public GameObject enemyOne;
 	public GameObject enemyTwo;
 
     private bool playerOneCollided;
-    private bool playerTwoCollided;
 
 	void Awake()
 	{
@@ -30,10 +28,6 @@ public class ExitScript : MonoBehaviour {
 			Destroy(enemyTwo);
         }
 
-        else if (playerTwoCollided && Input.GetKeyDown(KeyCode.RightControl))
-        {
-            Destroy(playerTwo);
-        }
     }
 
     void OnTriggerEnter(Collider collider)
@@ -41,11 +35,6 @@ public class ExitScript : MonoBehaviour {
 		if(collider.gameObject.name == "PlayerOne")
         {
             playerOneCollided = true;
-        }
-
-        else if (collider.gameObject.name == "PlayerTwo")
-        {
-            playerTwoCollided = true;
         }
     }
 
@@ -55,11 +44,5 @@ public class ExitScript : MonoBehaviour {
         {
             playerOneCollided = false;
         }
-
-        else if (collider.gameObject.name == "PlayerTwo")
-        {
-            playerTwoCollided = false;
-        }
-    
     }
 }

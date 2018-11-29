@@ -16,7 +16,6 @@ public class EnemyReset : MonoBehaviour
         if (other.tag == "EnemySpawn")
         {
             collided = true;
-            Debug.Log("Collided");
         }
     }
 
@@ -25,7 +24,6 @@ public class EnemyReset : MonoBehaviour
         if (other.name == "EnemySpawn")
         {
             collided = false;
-            Debug.Log("Left Collision");
         }
     }
 

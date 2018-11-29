@@ -7,13 +7,13 @@ public class UITutorial : MonoBehaviour
 {
 	public bool inTrigger;
 	//public GameObject Player;
-	[SerializeField] private Image customImage;
+	[SerializeField] private Image image;
 
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player")) 
 		{
-			customImage.enabled = true;
+			image.enabled = true;
 		}
 	}
 
@@ -21,7 +21,7 @@ public class UITutorial : MonoBehaviour
 	{
 		if (other.CompareTag("Player")) 
 		{
-			customImage.enabled = false;
+			image.enabled = false;
 		}
 	}
 }

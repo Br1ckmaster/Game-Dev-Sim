@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyTwo : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class EnemyTwo : MonoBehaviour
     public Quaternion originalRot;
     [HideInInspector]
     public Quaternion currentRot;
+
+    [SerializeField]
+    private Image image;
 
     private ChaseTwo chase;
     private PathTwo path;
@@ -63,18 +67,20 @@ public class EnemyTwo : MonoBehaviour
             if (reset.collided == true && idling == false)
             {
                 Idle();
+                image.enabled = false;
             }
             else if (Vector3.Distance(playerOne.position, 
                         gameObject.transform.position) < enemyRadiusP1 && idling)
             {
                 Chase();
                 reset.collided = false;
-                            
+                image.enabled = true;
             }
             else if (Vector3.Distance(playerOne.position, gameObject.transform.position)
                                         > enemyRadiusP1 + enemyTrailDistance)
             {
                 PathBack();
+                image.enabled = false;
             }
         }
         

@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UIAppear : MonoBehaviour {
 
-    [SerializeField] private Image customImage;
+    [SerializeField]
+    private Image image;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            customImage.enabled = true;
+            image.enabled = true;
         }
     }
 
@@ -19,15 +20,15 @@ public class UIAppear : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            customImage.enabled = false;
+            image.enabled = false;
         }
     }
 
     private void OnDestroy()
     {
-        if (customImage != null)
+        if (image != null)
         {
-            customImage.enabled = false;
+            image.enabled = false;
         }
     }
 
