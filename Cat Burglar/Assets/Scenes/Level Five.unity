@@ -12019,19 +12019,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: playerOne
-      value: 
-      objectReference: {fileID: 767200803}
     - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
         type: 2}
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 767200803}
-    - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 114940494009090848, guid: de303db76e9777c40be93191f07031fe,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
