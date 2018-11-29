@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class PickupObject : MonoBehaviour
-{
-   
+{   
     public PlayerLine playerOneRadius;
 
     public EnemyOne enemyOneDetection;
@@ -25,6 +24,9 @@ public class PickupObject : MonoBehaviour
 
     private int playerOneFinal = 0;
 
+    public AudioClip pickupSound;
+    //private AudioSource source;
+
     public void Awake()
     {
         playerOneScore = 0;
@@ -32,6 +34,7 @@ public class PickupObject : MonoBehaviour
         p1FirstRadiusChanged = false;
         p1SecondRadiusChanged = false;
         p1ThirdRadiusChanged = false;
+        //source = GetComponent<AudioSource>();
 
     }
 
@@ -39,7 +42,7 @@ public class PickupObject : MonoBehaviour
     {
         if (playerOneCollided && Input.GetButton("P1_Pickup"))
         {
-            PlayerOnePickup();
+           StartCoroutine(PlayerOnePickup());
         }
 
     }
@@ -60,8 +63,10 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    public void PlayerOnePickup()
+    IEnumerator PlayerOnePickup()
     {
+        yield return new WaitForSeconds(0.2f);
+
         Destroy(gameObject);
 
         switch (gameObject.tag)
