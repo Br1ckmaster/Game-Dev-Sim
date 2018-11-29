@@ -434,7 +434,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -184, y: -66}
-  m_SizeDelta: {x: 80, y: 35.6}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252909660
 MonoBehaviour:
@@ -507,9 +507,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c5ea3b367d6143146afaa3e5808f9d9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f119f247dcf60014c916bcf775a4ede3, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -630,7 +630,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -185, y: -114}
-  m_SizeDelta: {x: 160, y: 35.6}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424964855
 MonoBehaviour:
@@ -703,9 +703,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cf252ffd2a187f044ae5b56edf1f8793, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5aac5185164a044b3a45239e5d71d1, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -961,12 +961,12 @@ Prefab:
     - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 35.6
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
         type: 2}
@@ -1006,8 +1006,13 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1656be4058dc22e4b9032bb0b1da5fb4,
+      objectReference: {fileID: 21300000, guid: 18a0c6de4d2f3474b95a56be1c443ba3,
         type: 3}
+    - target: {fileID: 114128525072054396, guid: cd4c9822130985a488b26dc3f5f269ad,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd4c9822130985a488b26dc3f5f269ad, type: 2}
   m_IsPrefabParent: 0
