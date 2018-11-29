@@ -70,13 +70,13 @@ public class EnemyOne: MonoBehaviour
 
         if (playerOne != null)
         {
-            if (reset.collided == true && idling == false)
+            if (reset.collided && !idling)
             {
                 Idle();
                 image.enabled = false;
             }
             else if (Vector3.Distance(playerOne.position, 
-                        gameObject.transform.position) < enemyRadiusP1 && idling)
+                        gameObject.transform.position) < enemyRadiusP1)
             {
                 Chase();
                 reset.collided = false;

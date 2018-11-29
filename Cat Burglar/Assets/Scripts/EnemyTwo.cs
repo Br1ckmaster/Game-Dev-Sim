@@ -76,7 +76,7 @@ public class EnemyTwo : MonoBehaviour
                 image.enabled = false;
             }
             else if (Vector3.Distance(playerOne.position, 
-                        gameObject.transform.position) < enemyRadiusP1 && idling)
+                        gameObject.transform.position) < enemyRadiusP1)
             {
                 Chase();
                 reset.collided = false;
