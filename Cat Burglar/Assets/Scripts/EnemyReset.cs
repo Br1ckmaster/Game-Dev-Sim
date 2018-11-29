@@ -9,12 +9,11 @@ public class EnemyReset : MonoBehaviour
 
 	public void Update()
     {
-
 	}
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "EnemySpawn")
         {
             collided = true;
             Debug.Log("Collided");
@@ -23,7 +22,7 @@ public class EnemyReset : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.name == "Enemy")
+        if (other.name == "EnemySpawn")
         {
             collided = false;
             Debug.Log("Left Collision");

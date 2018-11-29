@@ -44,7 +44,7 @@ public class PickupObject : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider collider) //When player collides with object
+    private void OnTriggerEnter(Collider collider) //When player collides with object
     {
         switch(collider.gameObject.name)
         {
@@ -52,7 +52,7 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider collider) //When player two exits object collider
+    private void OnTriggerExit(Collider collider) //When player two exits object collider
     {
         switch (collider.gameObject.name)
         {
@@ -60,7 +60,7 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    void PlayerOnePickup()
+    public void PlayerOnePickup()
     {
         Destroy(gameObject);
 
@@ -99,7 +99,7 @@ public class PickupObject : MonoBehaviour
     }
 
 
-    void OnDestroy()
+    public void OnDestroy()
     {
         if (playerOneFinal >= 250 && !p1FirstRadiusChanged)
         {

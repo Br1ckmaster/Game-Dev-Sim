@@ -8,10 +8,9 @@ public class EnemyTwo : MonoBehaviour
     public double enemyRadiusP1 = 2;
     public double enemyRadiusP2 = 2;
     public double enemyTrailDistance = 3;
-    public bool idle;
+    public bool idling;
 
     public Animator anim;
-
 
     [HideInInspector]
     public Vector3 originalPos;
@@ -24,8 +23,7 @@ public class EnemyTwo : MonoBehaviour
     private PathTwo path;
     private EnemyReset reset;
 
-
-    void Awake()
+    private void Awake()
     {
         originalPos = new Vector3(gameObject.transform.position.x, 
             0, gameObject.transform.position.z);
@@ -36,10 +34,9 @@ public class EnemyTwo : MonoBehaviour
         anim.SetBool("IsWalking", false);
         anim.SetBool("IsAttacking", false);
 
-        idle = true;
     }
 
-    void Start()
+    public void Start()
     {
         anim = GetComponent<Animator>();
         chase = GetComponent<ChaseTwo>();
@@ -51,8 +48,9 @@ public class EnemyTwo : MonoBehaviour
         reset.collided = true;
     }
 
-    void Update()
+    public void Update()
     {
+
         currentPos = new Vector3(gameObject.transform.position.x,
             0, gameObject.transform.position.z);
 
@@ -60,43 +58,55 @@ public class EnemyTwo : MonoBehaviour
 
         if (playerOne != null)
         {
-            while (reset.collided == true)
+
+            if (reset.collided == true && idling == false)
             {
-                anim.SetBool("IsIdle", true);
-                anim.SetBool("IsWalking", false);
-                anim.SetBool("IsAttacking", false);
-
-                path.enabled = false;
-                chase.enabled = false;
-
-                idle = true;
+                Idle();
             }
 
-            if (Vector3.Distance(playerOne.position, gameObject.transform.position) < enemyRadiusP1 && reset.collided == false)
+            else if (Vector3.Distance(playerOne.position, gameObject.transform.position) < enemyRadiusP1 && idling)
             {
-                chase.enabled = true;
-                path.enabled = false;
-                chase.PlayerChaseTwo();
-                idle = false;
+                Chase();
+                reset.collided = false;
+                            
             }
-            else if (Vector3.Distance(playerOne.position, gameObject.transform.position) 
-                > enemyRadiusP1 + enemyTrailDistance && reset.collided == false)
-            {
-                path.enabled = true;
-                chase.enabled = false;
-                path.PathBackTwo();
-                idle = false;
-            }
-            //else if (reset.collided == true)
-            //{
-            //    anim.SetBool("IsIdle", true);
-            //    anim.SetBool("IsWalking", false);
-            //    anim.SetBool("IsAttacking", false);
 
-            //    path.enabled = false;
-            //    chase.enabled = false;
-            //}
+            else if (Vector3.Distance(playerOne.position, gameObject.transform.position)
+                > enemyRadiusP1 + enemyTrailDistance)
+            {
+                PathBack();
+            }
+
+
         }
         
     }
+
+    private void Idle()
+    {
+        anim.SetBool("IsIdle", true);
+        anim.SetBool("IsWalking", false);
+        anim.SetBool("IsAttacking", false);
+
+        path.enabled = false;
+        chase.enabled = false;
+
+        idling = true;
+    }
+
+    private void Chase()
+    {
+        chase.enabled = true;
+        path.enabled = false;
+        chase.PlayerChaseTwo();
+    }
+
+    private void PathBack()
+    {
+        path.enabled = true;
+        chase.enabled = false;
+        path.PathBackTwo();
+        idling = false;
+    }
+
 }
