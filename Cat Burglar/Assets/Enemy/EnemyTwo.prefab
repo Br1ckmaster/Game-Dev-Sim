@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 114629727280780470}
   - component: {fileID: 114311381403713662}
   - component: {fileID: 114526701054954444}
+  - component: {fileID: 114331799499130282}
   m_Layer: 0
   m_Name: EnemyTwo
   m_TagString: Enemy
@@ -561,7 +562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7e3efae9c9deb41a606829ce3c10eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
 --- !u!114 &114309292791666794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -589,6 +589,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 95954797619231034}
   player: {fileID: 0}
+--- !u!114 &114331799499130282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973179638423500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b9af157ed7de64e8324fd334794ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collided: 0
 --- !u!114 &114385907188646278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -629,9 +641,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOne: {fileID: 0}
   enemyRadiusP1: 2
-  enemyRadiusP2: 2
   enemyTrailDistance: 3
-  idle: 0
+  idling: 0
   anim: {fileID: 95954797619231034}
   originalPos: {x: 0, y: 0, z: 0}
   currentPos: {x: 0, y: 0, z: 0}

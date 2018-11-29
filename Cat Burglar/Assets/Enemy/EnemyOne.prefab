@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 54518804972893348}
   - component: {fileID: 114397640791652750}
   - component: {fileID: 114599651310145966}
+  - component: {fileID: 114854376381676570}
   m_Layer: 0
   m_Name: EnemyOne
   m_TagString: Enemy
@@ -534,7 +535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7e3efae9c9deb41a606829ce3c10eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
 --- !u!114 &114144691843486816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -548,10 +548,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOne: {fileID: 0}
   enemyRadiusP1: 2
-  enemyRadiusP2: 2
-  enemyTrailDistance: 0
+  enemyTrailDistance: 3
+  idling: 0
   anim: {fileID: 95681048739662714}
   originalPos: {x: 0, y: 0, z: 0}
+  currentPos: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  currentRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &114397640791652750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -654,6 +657,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114854376381676570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796388299833706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b9af157ed7de64e8324fd334794ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collided: 0
 --- !u!136 &136860428988044470
 CapsuleCollider:
   m_ObjectHideFlags: 1
