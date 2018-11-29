@@ -15,7 +15,7 @@ public class PlayerOneController : MonoBehaviour
         animControl = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         playerOne.detectCollisions = false;
     }
-    void Update() //Player Movement
+    public void Update() //Player Movement
     {
         PlayerAnimator();
         Vector2 input = new Vector2(Input.GetAxisRaw("P1_Horizontal"), Input.GetAxisRaw("P1_Vertical"));
@@ -32,7 +32,7 @@ public class PlayerOneController : MonoBehaviour
         playerOne.Move(velocity * Time.deltaTime);
     }
 
-    void PlayerAnimator()
+    private void PlayerAnimator()
     {
         if(Input.GetButton("P1_Horizontal") || (Input.GetButton("P1_Vertical")))
         {

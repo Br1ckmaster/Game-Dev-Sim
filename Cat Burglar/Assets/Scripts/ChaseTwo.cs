@@ -10,12 +10,12 @@ public class ChaseTwo : MonoBehaviour {
     private NavMeshAgent nav;
     private EnemyTwo enemy;
 
-    void Awake()
+    private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
     }
 
-    void Start()
+    private void Start()
     {
         anim = GetComponent<Animator>();
         enemy = GetComponent<EnemyTwo>();

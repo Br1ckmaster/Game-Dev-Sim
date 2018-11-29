@@ -27,8 +27,5 @@ public class PathTwo : MonoBehaviour
             return;
         }
         nav.SetDestination(enemy.originalPos);
-        anim.SetBool("IsIdle", false);
-        anim.SetBool("IsWalking", true);
-        anim.SetBool("IsAttacking", false);
     }
 }
