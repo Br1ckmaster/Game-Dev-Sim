@@ -56,8 +56,6 @@ public class EnemyTwo : MonoBehaviour
         path = GetComponent<PathTwo>();
         reset = GetComponent<EnemyReset>();
 
-        //chase.enabled = false;
-        //path.enabled = false;
         reset.collided = true;
     }
 
@@ -98,25 +96,16 @@ public class EnemyTwo : MonoBehaviour
         anim.SetBool("IsWalking", false);
         anim.SetBool("IsAttacking", false);
 
-        //path.enabled = false;
-        //chase.enabled = false;
-
         idling = true;
     }
 
     private void Chase()
     {
-        //chase.enabled = true;
-        //path.enabled = false;
-        ChaseMusic.TransitionTo(transitionIn);
         chase.PlayerChaseTwo();
     }
 
     private void PathBack()
     {
-        //path.enabled = true;
-        //chase.enabled = false;
-        BGM.TransitionTo(transitionOut);
         path.PathBackTwo();
         idling = false;
     }

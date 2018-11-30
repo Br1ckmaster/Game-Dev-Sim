@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using UnityEngine.Audio;
 
 public class Chase : MonoBehaviour
 {  
     public Animator anim;
     public GameObject player;
+    public PlayerOneController playerMovement;
+    public Image image;
 
     private NavMeshAgent nav;
     private EnemyOne enemy;
-
-	//[SerializeField] private Image image;
+	
 
     private void Awake()
     {
@@ -41,10 +41,10 @@ public class Chase : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        switch (collision.gameObject.name)
+        switch (collision.gameObject.tag)
         {
-           	case "PlayerOne": Destroy(player); break;
-			//image.enabled = true;
+            case "Player": playerMovement.movementSpeed = 0;
+                image.enabled = true; break;
 		}
     }
 }

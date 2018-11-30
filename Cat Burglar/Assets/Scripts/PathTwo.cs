@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class PathTwo : MonoBehaviour 
 {
-    static Animator anim;
-
     private NavMeshAgent nav;
     private EnemyTwo enemy;
 
@@ -16,7 +14,6 @@ public class PathTwo : MonoBehaviour
     }
     void Start()
     {
-        anim = GetComponent<Animator>();
         enemy = GetComponent<EnemyTwo>();
     }
 

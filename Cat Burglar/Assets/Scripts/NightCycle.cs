@@ -16,16 +16,12 @@ public class NightCycle : MonoBehaviour
     public EnemyOne enemyOneDetectionP1;
     public EnemyTwo enemyTwoDetectionP1;
 
-    public AudioClip rooster;
-    private AudioSource source;
-
     private float timeMultiplier = 1f;
     private float sunInitialIntensity;
 
     private void Start()
     {
         sunInitialIntensity = sun.intensity; //sun is equal to the directional light intensity
-        source = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -39,7 +35,6 @@ public class NightCycle : MonoBehaviour
             playerOneRadius.radius = 20;
             enemyOneDetectionP1.enemyRadiusP1 = 22;
             enemyTwoDetectionP1.enemyRadiusP1 = 22;
-            source.PlayOneShot(rooster);
         }
     }
 

@@ -4273,6 +4273,12 @@ Prefab:
     - {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &264532668 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114940494009090848, guid: de303db76e9777c40be93191f07031fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 264532667}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &268440001
 Prefab:
   m_ObjectHideFlags: 0
@@ -12429,6 +12435,16 @@ Prefab:
       propertyPath: m_Speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 264532668}
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2032307403}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
@@ -25439,7 +25455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1596964244}
   - component: {fileID: 1596964245}
-  - component: {fileID: 1596964246}
   m_Layer: 0
   m_Name: SunScript
   m_TagString: Untagged
@@ -25476,86 +25491,6 @@ MonoBehaviour:
   enemyOneDetectionP1: {fileID: 1807111374}
   enemyTwoDetectionP1: {fileID: 432978406}
   rooster: {fileID: 8300000, guid: 8a3ea79aacd648d45a7c4ba8aaa987c6, type: 3}
---- !u!82 &1596964246
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1596964243}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8a3ea79aacd648d45a7c4ba8aaa987c6, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.76
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!1001 &1597016102
 Prefab:
   m_ObjectHideFlags: 0
@@ -28602,6 +28537,16 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 1807111375}
+    - target: {fileID: 114599651310145966, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 264532668}
+    - target: {fileID: 114599651310145966, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2032307403}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0
@@ -31844,6 +31789,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2032307400}
   m_Script: {fileID: 11500000, guid: 72516fbb1c0952d4b8d3038be26611f3, type: 3}
+--- !u!114 &2032307403 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114794772182826664, guid: 3faf5bc08d71608498e0bacf82210883,
+    type: 2}
+  m_PrefabInternal: {fileID: 2032307400}
+  m_Script: {fileID: 11500000, guid: c56b8bd1ef9c6d54eb6d006c40779e9d, type: 3}
 --- !u!4 &2035672172 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4431816198893790, guid: 03d392436c27e7447bd27067cae7989c,

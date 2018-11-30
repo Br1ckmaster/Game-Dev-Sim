@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class ChaseTwo : MonoBehaviour {
     public Animator anim;
     public GameObject player;
+    public PlayerOneController playerMovement;
+    public Image image;
 
     private NavMeshAgent nav;
     private EnemyTwo enemy;
@@ -37,7 +40,8 @@ public class ChaseTwo : MonoBehaviour {
     {
         switch (collision.gameObject.tag)
         {
-            case "Player": Destroy(player); break;
+            case "Player": playerMovement.movementSpeed = 0;
+                image.enabled = true; break;
         }
     }
 }

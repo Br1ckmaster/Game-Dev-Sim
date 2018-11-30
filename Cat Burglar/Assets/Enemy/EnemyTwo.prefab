@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 114526701054954444}
   - component: {fileID: 114331799499130282}
   - component: {fileID: 114402230141086636}
+  - component: {fileID: 114940776959083458}
   m_Layer: 0
   m_Name: EnemyTwo
   m_TagString: Enemy
@@ -444,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1973179638423500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.29, y: 6.687903e-17, z: -3.19}
+  m_LocalPosition: {x: -8.76, y: 3.7969317e-17, z: -0.574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4925949731019022}
@@ -575,6 +576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 95954797619231034}
   player: {fileID: 0}
+  playerMovement: {fileID: 0}
+  image: {fileID: 0}
 --- !u!114 &114331799499130282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -671,6 +674,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114940776959083458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973179638423500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4179be958c8ebd4caf200df548c50df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM: {fileID: 24500006, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
+  Chase: {fileID: 245726587685925842, guid: 6150062cb74fd5b4c96a9f06828e9dd5, type: 2}
+  BPM: 120
 --- !u!136 &136515211249367656
 CapsuleCollider:
   m_ObjectHideFlags: 1

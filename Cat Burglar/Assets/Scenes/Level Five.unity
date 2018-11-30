@@ -10617,6 +10617,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3faf5bc08d71608498e0bacf82210883, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1018058027 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114794772182826664, guid: 3faf5bc08d71608498e0bacf82210883,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018058026}
+  m_Script: {fileID: 11500000, guid: c56b8bd1ef9c6d54eb6d006c40779e9d, type: 3}
 --- !u!1001 &1028325068
 Prefab:
   m_ObjectHideFlags: 0
@@ -13777,7 +13783,6 @@ MonoBehaviour:
   playerOneRadius: {fileID: 1679738725}
   enemyOneDetectionP1: {fileID: 1316352958}
   enemyTwoDetectionP1: {fileID: 1650277875}
-  rooster: {fileID: 0}
 --- !u!1001 &1284597812
 Prefab:
   m_ObjectHideFlags: 0
@@ -18323,6 +18328,16 @@ Prefab:
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 1679738730}
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 1386253898}
+    - target: {fileID: 114311381403713662, guid: cbf9ecce1a674674d99ae68e2a45adb1,
+        type: 2}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1018058027}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf9ecce1a674674d99ae68e2a45adb1, type: 2}
   m_IsPrefabParent: 0
@@ -23330,6 +23345,11 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 1386253898}
+    - target: {fileID: 114599651310145966, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003,
+        type: 2}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1018058027}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a0d9aa83e5fefc4381ad0e61f4ef003, type: 2}
   m_IsPrefabParent: 0

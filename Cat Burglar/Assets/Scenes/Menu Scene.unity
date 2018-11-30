@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ RectTransform:
   m_GameObject: {fileID: 252909658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.86171573, y: 0.8617158, z: 0.8617158}
+  m_LocalScale: {x: 0.86171573, y: 0.96561855, z: 0.8617158}
   m_Children:
   - {fileID: 28695048}
   m_Father: {fileID: 1115823722}
@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184, y: -66}
+  m_AnchoredPosition: {x: -184, y: -69.7}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252909660
@@ -621,7 +621,7 @@ RectTransform:
   m_GameObject: {fileID: 424964853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1288358, z: 1}
   m_Children:
   - {fileID: 809405488}
   m_Father: {fileID: 1115823722}
@@ -629,7 +629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -185, y: -114}
+  m_AnchoredPosition: {x: -185, y: -115.3}
   m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424964855
@@ -951,7 +951,7 @@ Prefab:
     - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -185.00006
+      value: -183.2
       objectReference: {fileID: 0}
     - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
         type: 2}
@@ -1012,6 +1012,16 @@ Prefab:
         type: 2}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.75240564
+      objectReference: {fileID: 0}
+    - target: {fileID: 224433424671402284, guid: cd4c9822130985a488b26dc3f5f269ad,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6772903
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd4c9822130985a488b26dc3f5f269ad, type: 2}
