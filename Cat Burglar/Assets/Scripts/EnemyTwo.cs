@@ -13,8 +13,6 @@ public class EnemyTwo : MonoBehaviour
     public bool idling;
 
     public Animator anim;
-    public AudioMixerSnapshot BGM;
-    public AudioMixerSnapshot ChaseMusic;
 
     [HideInInspector]
     public Vector3 originalPos;
