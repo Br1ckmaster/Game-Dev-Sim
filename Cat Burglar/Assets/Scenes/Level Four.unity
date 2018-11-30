@@ -4229,48 +4229,7 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1138580725930188, guid: de303db76e9777c40be93191f07031fe, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 95051070779755984, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114500090014779880, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114500090014779880, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114722166017090174, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114722166017090174, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224932485124609850, guid: de303db76e9777c40be93191f07031fe,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 341.61
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114841776962333360, guid: de303db76e9777c40be93191f07031fe, type: 2}
-    - {fileID: 114272436537970038, guid: de303db76e9777c40be93191f07031fe, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de303db76e9777c40be93191f07031fe, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &264532668 stripped
@@ -25490,7 +25449,6 @@ MonoBehaviour:
   playerOneRadius: {fileID: 2032307402}
   enemyOneDetectionP1: {fileID: 1807111374}
   enemyTwoDetectionP1: {fileID: 432978406}
-  rooster: {fileID: 8300000, guid: 8a3ea79aacd648d45a7c4ba8aaa987c6, type: 3}
 --- !u!1001 &1597016102
 Prefab:
   m_ObjectHideFlags: 0
