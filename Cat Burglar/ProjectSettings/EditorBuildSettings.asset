@@ -24,8 +24,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Five.unity
     guid: a1189f270cf3644baa4f24369a0fcb60
   - enabled: 0
-    path: Assets/Scenes/Game Over 2 Player.unity
-    guid: 5598cb473365a4b63bfa2d68aad5ad62
-  - enabled: 0
     path: Assets/Scenes/Test Area Scene.unity
     guid: 42253036a2e77fa408b0beec1c058a3e
