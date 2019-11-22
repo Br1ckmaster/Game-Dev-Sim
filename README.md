@@ -11,8 +11,8 @@ The player will have to sneak around the house, trying to keep the noise they ma
 <br />
 As the player progresses and their score increases they will create more noise as they move, which will be indicated by a proximity ring around the player letting them know anyone within that ring may detect them. <br />
 <br />
-The Game Dev Sim team consists of: <br />
-Steven Coombe - Programmer <br />
-Ryan Dempsey - Designer <br />
-Liam Gollan - Artist <br />
-Jayden Senior - Artist <br />
+The Game Dev Sim team consists of: <br>
+Steven Coombe - Programmer <br>
+Ryan Dempsey - Designer <br>
+Liam Gollan - Artist <br>
+Jayden Senior - Artist <br>
