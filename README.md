@@ -13,6 +13,14 @@ As the player progresses and their score increases they will create more noise a
 <br>
 The Game Dev Sim team consists of: <br>
 Steven Coombe - Programmer <br>
+https://www.linkedin.com/in/steven-coombe/ <br>
+<br>
 Ryan Dempsey - Designer <br>
-Liam Gollan - Artist <br>
-Jayden Senior - Artist <br>
+https://www.linkedin.com/in/ryanjdempsey/ <br>
+<br>
+Liam Gollan - Environment Artist <br>
+https://www.linkedin.com/in/liam-gollan/ <br>
+<br>
+Jayden Senior - Character Artist <br>
+https://www.linkedin.com/in/jayden-senior/ <br>
+<br>
